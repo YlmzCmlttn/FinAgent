@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  financial_research_agent:
+    build: .
+    container_name: financial_research_agent
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./sample_outputs:/app/sample_outputs
+    stdin_open: true
+    tty: true
+    command: python -u main.py

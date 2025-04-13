@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  research-bot:
+    build: .
+    container_name: research-bot
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./sample_outputs:/app/sample_outputs
+    stdin_open: true
+    tty: true
+    command: python -u main.py

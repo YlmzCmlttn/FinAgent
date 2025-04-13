@@ -1,0 +1,4224 @@
+{
+    "header": [
+        "Hisse",
+        "Son Fiyat",
+        "Gün %",
+        "Hacim",
+        "Piyasa Değeri"
+    ],
+    "attributes": [
+        {
+            "key": "kapanis",
+            "title": "Son Fiyat",
+            "short_title": null,
+            "format": {
+                "decimals": 2,
+                "thousand": true
+            },
+            "min": null,
+            "max": null
+        },
+        {
+            "key": "gunluk_getiri",
+            "title": "Gün %",
+            "short_title": null,
+            "format": {
+                "decimals": 2,
+                "prefix": "%",
+                "signColor": true
+            },
+            "min": null,
+            "max": null
+        },
+        {
+            "key": "gunluk_hacim",
+            "title": "Hacim",
+            "short_title": null,
+            "format": {
+                "decimals": 2,
+                "abbreviation": true
+            },
+            "min": null,
+            "max": null
+        },
+        {
+            "key": "piyasa_degeri",
+            "title": "Piyasa Değeri",
+            "short_title": null,
+            "format": {
+                "decimals": 3,
+                "prefix": "₺",
+                "abbreviation": true
+            },
+            "min": null,
+            "max": null
+        }
+    ],
+    "data": [
+        {
+            "code": "A1CAP",
+            "kapanis": 4.89,
+            "gunluk_getiri": 2.73,
+            "gunluk_hacim": 31587728,
+            "piyasa_degeri": 3300750000.0
+        },
+        {
+            "code": "ACSEL",
+            "kapanis": 106.0,
+            "gunluk_getiri": 3.31,
+            "gunluk_hacim": 10484310,
+            "piyasa_degeri": 1136500200.0
+        },
+        {
+            "code": "ADEL",
+            "kapanis": 31.74,
+            "gunluk_getiri": 0.19,
+            "gunluk_hacim": 44520371,
+            "piyasa_degeri": 8248432500.0
+        },
+        {
+            "code": "ADESE",
+            "kapanis": 1.9,
+            "gunluk_getiri": 3.26,
+            "gunluk_hacim": 124136042,
+            "piyasa_degeri": 1915200000.0
+        },
+        {
+            "code": "ADGYO",
+            "kapanis": 31.7,
+            "gunluk_getiri": 1.47,
+            "gunluk_hacim": 61434528,
+            "piyasa_degeri": 9310290000.0
+        },
+        {
+            "code": "AEFES",
+            "kapanis": 165.7,
+            "gunluk_getiri": 2.09,
+            "gunluk_hacim": 874640159,
+            "piyasa_degeri": 98111842079.09999
+        },
+        {
+            "code": "AFYON",
+            "kapanis": 14.02,
+            "gunluk_getiri": -0.92,
+            "gunluk_hacim": 135635358,
+            "piyasa_degeri": 5608000000.0
+        },
+        {
+            "code": "AGESA",
+            "kapanis": 128.6,
+            "gunluk_getiri": -0.39,
+            "gunluk_hacim": 52690818,
+            "piyasa_degeri": 23148000000.0
+        },
+        {
+            "code": "AGHOL",
+            "kapanis": 286.0,
+            "gunluk_getiri": 1.06,
+            "gunluk_hacim": 143165313,
+            "piyasa_degeri": 69650871862.0
+        },
+        {
+            "code": "AGROT",
+            "kapanis": 8.55,
+            "gunluk_getiri": 2.4,
+            "gunluk_hacim": 247459191,
+            "piyasa_degeri": 10260000000.0
+        },
+        {
+            "code": "AGYO",
+            "kapanis": 6.21,
+            "gunluk_getiri": 0.32,
+            "gunluk_hacim": 3833910,
+            "piyasa_degeri": 1635341400.0
+        },
+        {
+            "code": "AHGAZ",
+            "kapanis": 22.5,
+            "gunluk_getiri": 8.07,
+            "gunluk_hacim": 188332413,
+            "piyasa_degeri": 58500000000.0
+        },
+        {
+            "code": "AHSGY",
+            "kapanis": 21.48,
+            "gunluk_getiri": 2.19,
+            "gunluk_hacim": 32968163,
+            "piyasa_degeri": 4188600000.0
+        },
+        {
+            "code": "AKBNK",
+            "kapanis": 51.95,
+            "gunluk_getiri": -0.29,
+            "gunluk_hacim": 5517790525,
+            "piyasa_degeri": 270140000000.0
+        },
+        {
+            "code": "AKCNS",
+            "kapanis": 170.5,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 54235601,
+            "piyasa_degeri": 32641725094.0
+        },
+        {
+            "code": "AKENR",
+            "kapanis": 10.06,
+            "gunluk_getiri": 2.65,
+            "gunluk_hacim": 75418384,
+            "piyasa_degeri": 7335389840.0
+        },
+        {
+            "code": "AKFGY",
+            "kapanis": 1.9,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 222623197,
+            "piyasa_degeri": 7410000000.0
+        },
+        {
+            "code": "AKFIS",
+            "kapanis": 19.65,
+            "gunluk_getiri": 1.71,
+            "gunluk_hacim": 93264898,
+            "piyasa_degeri": 12508877132.699999
+        },
+        {
+            "code": "AKFYE",
+            "kapanis": 17.89,
+            "gunluk_getiri": 4.25,
+            "gunluk_hacim": 133609745,
+            "piyasa_degeri": 21413658158.940002
+        },
+        {
+            "code": "AKGRT",
+            "kapanis": 6.41,
+            "gunluk_getiri": 2.89,
+            "gunluk_hacim": 96117111,
+            "piyasa_degeri": 10332920000.0
+        },
+        {
+            "code": "AKMGY",
+            "kapanis": 248.5,
+            "gunluk_getiri": 3.2,
+            "gunluk_hacim": 37550053,
+            "piyasa_degeri": 9260104000.0
+        },
+        {
+            "code": "AKSA",
+            "kapanis": 11.0,
+            "gunluk_getiri": 2.04,
+            "gunluk_hacim": 139552096,
+            "piyasa_degeri": 42735000000.0
+        },
+        {
+            "code": "AKSEN",
+            "kapanis": 34.14,
+            "gunluk_getiri": 1.61,
+            "gunluk_hacim": 98123253,
+            "piyasa_degeri": 41867187377.04
+        },
+        {
+            "code": "AKSGY",
+            "kapanis": 6.75,
+            "gunluk_getiri": -0.3,
+            "gunluk_hacim": 23127443,
+            "piyasa_degeri": 16301250000.0
+        },
+        {
+            "code": "AKSUE",
+            "kapanis": 20.04,
+            "gunluk_getiri": -0.6,
+            "gunluk_hacim": 21375532,
+            "piyasa_degeri": 1322640000.0
+        },
+        {
+            "code": "AKYHO",
+            "kapanis": 3.2,
+            "gunluk_getiri": 9.97,
+            "gunluk_hacim": 29800524,
+            "piyasa_degeri": 794208000.0
+        },
+        {
+            "code": "ALARK",
+            "kapanis": 102.8,
+            "gunluk_getiri": -1.06,
+            "gunluk_hacim": 1021065139,
+            "piyasa_degeri": 44718000000.0
+        },
+        {
+            "code": "ALBRK",
+            "kapanis": 6.01,
+            "gunluk_getiri": 1.69,
+            "gunluk_hacim": 122930408,
+            "piyasa_degeri": 15025000000.0
+        },
+        {
+            "code": "ALCAR",
+            "kapanis": 1319.0,
+            "gunluk_getiri": -2.15,
+            "gunluk_hacim": 153302181,
+            "piyasa_degeri": 14245200000.0
+        },
+        {
+            "code": "ALCTL",
+            "kapanis": 101.7,
+            "gunluk_getiri": 1.9,
+            "gunluk_hacim": 41235149,
+            "piyasa_degeri": 3935868512.4
+        },
+        {
+            "code": "ALFAS",
+            "kapanis": 49.96,
+            "gunluk_getiri": 0.48,
+            "gunluk_hacim": 76807181,
+            "piyasa_degeri": 18385280000.0
+        },
+        {
+            "code": "ALGYO",
+            "kapanis": 18.26,
+            "gunluk_getiri": 1.44,
+            "gunluk_hacim": 30385793,
+            "piyasa_degeri": 5291748000.0
+        },
+        {
+            "code": "ALKA",
+            "kapanis": 7.0,
+            "gunluk_getiri": 1.3,
+            "gunluk_hacim": 15696067,
+            "piyasa_degeri": 5145000000.0
+        },
+        {
+            "code": "ALKIM",
+            "kapanis": 15.44,
+            "gunluk_getiri": 1.65,
+            "gunluk_hacim": 22889267,
+            "piyasa_degeri": 4632000000.0
+        },
+        {
+            "code": "ALKLC",
+            "kapanis": 44.94,
+            "gunluk_getiri": 2.09,
+            "gunluk_hacim": 356721984,
+            "piyasa_degeri": 5033280000.0
+        },
+        {
+            "code": "ALMAD",
+            "kapanis": 7.25,
+            "gunluk_getiri": 0.14,
+            "gunluk_hacim": 9945870,
+            "piyasa_degeri": 1993750000.0
+        },
+        {
+            "code": "ALTNY",
+            "kapanis": 85.2,
+            "gunluk_getiri": 0.24,
+            "gunluk_hacim": 273170496,
+            "piyasa_degeri": 20047058853.600002
+        },
+        {
+            "code": "ALVES",
+            "kapanis": 28.5,
+            "gunluk_getiri": 1.21,
+            "gunluk_hacim": 30114712,
+            "piyasa_degeri": 4560000000.0
+        },
+        {
+            "code": "ANELE",
+            "kapanis": 15.09,
+            "gunluk_getiri": 0.13,
+            "gunluk_hacim": 7641635,
+            "piyasa_degeri": 3998850000.0
+        },
+        {
+            "code": "ANGEN",
+            "kapanis": 11.05,
+            "gunluk_getiri": 1.1,
+            "gunluk_hacim": 36626801,
+            "piyasa_degeri": 2431000000.0
+        },
+        {
+            "code": "ANHYT",
+            "kapanis": 85.9,
+            "gunluk_getiri": -0.23,
+            "gunluk_hacim": 118575182,
+            "piyasa_degeri": 36937000000.0
+        },
+        {
+            "code": "ANSGR",
+            "kapanis": 92.4,
+            "gunluk_getiri": -0.91,
+            "gunluk_hacim": 211431091,
+            "piyasa_degeri": 46200000000.0
+        },
+        {
+            "code": "ARASE",
+            "kapanis": 43.78,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 134737875,
+            "piyasa_degeri": 10945000000.0
+        },
+        {
+            "code": "ARCLK",
+            "kapanis": 137.4,
+            "gunluk_getiri": 4.01,
+            "gunluk_hacim": 509316216,
+            "piyasa_degeri": 92845055367.0
+        },
+        {
+            "code": "ARDYZ",
+            "kapanis": 26.84,
+            "gunluk_getiri": 2.84,
+            "gunluk_hacim": 47174096,
+            "piyasa_degeri": 4562800000.0
+        },
+        {
+            "code": "ARENA",
+            "kapanis": 43.7,
+            "gunluk_getiri": 1.39,
+            "gunluk_hacim": 54393344,
+            "piyasa_degeri": 4370000000.0
+        },
+        {
+            "code": "ARMGD",
+            "kapanis": 30.62,
+            "gunluk_getiri": 1.86,
+            "gunluk_hacim": 83477763,
+            "piyasa_degeri": 8083093412.66
+        },
+        {
+            "code": "ARSAN",
+            "kapanis": 20.08,
+            "gunluk_getiri": 3.08,
+            "gunluk_hacim": 45323253,
+            "piyasa_degeri": 4105345257.2
+        },
+        {
+            "code": "ARTMS",
+            "kapanis": 28.18,
+            "gunluk_getiri": 2.55,
+            "gunluk_hacim": 49500932,
+            "piyasa_degeri": 1972600000.0
+        },
+        {
+            "code": "ARZUM",
+            "kapanis": 3.55,
+            "gunluk_getiri": 5.97,
+            "gunluk_hacim": 65754861,
+            "piyasa_degeri": 1065000000.0
+        },
+        {
+            "code": "ASELS",
+            "kapanis": 118.8,
+            "gunluk_getiri": 1.8,
+            "gunluk_hacim": 3558926598,
+            "piyasa_degeri": 541728000000.0
+        },
+        {
+            "code": "ASGYO",
+            "kapanis": 10.54,
+            "gunluk_getiri": 0.76,
+            "gunluk_hacim": 21659413,
+            "piyasa_degeri": 6945859999.999999
+        },
+        {
+            "code": "ASTOR",
+            "kapanis": 106.0,
+            "gunluk_getiri": -0.56,
+            "gunluk_hacim": 839315957,
+            "piyasa_degeri": 105788000000.0
+        },
+        {
+            "code": "ASUZU",
+            "kapanis": 59.8,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 48397765,
+            "piyasa_degeri": 15069600000.0
+        },
+        {
+            "code": "ATAGY",
+            "kapanis": 10.62,
+            "gunluk_getiri": -0.28,
+            "gunluk_hacim": 1794467,
+            "piyasa_degeri": 504449999.99999994
+        },
+        {
+            "code": "ATAKP",
+            "kapanis": 37.02,
+            "gunluk_getiri": 1.42,
+            "gunluk_hacim": 12705435,
+            "piyasa_degeri": 5137191360.0
+        },
+        {
+            "code": "ATATP",
+            "kapanis": 82.3,
+            "gunluk_getiri": 0.06,
+            "gunluk_hacim": 46452991,
+            "piyasa_degeri": 7715625000.0
+        },
+        {
+            "code": "ATEKS",
+            "kapanis": 83.2,
+            "gunluk_getiri": 9.98,
+            "gunluk_hacim": 3180405,
+            "piyasa_degeri": 2096640000.0
+        },
+        {
+            "code": "ATLAS",
+            "kapanis": 5.39,
+            "gunluk_getiri": 0.56,
+            "gunluk_hacim": 3714691,
+            "piyasa_degeri": 323400000.0
+        },
+        {
+            "code": "ATSYH",
+            "kapanis": 51.8,
+            "gunluk_getiri": -2.08,
+            "gunluk_hacim": 1391054,
+            "piyasa_degeri": 414400000.0
+        },
+        {
+            "code": "AVGYO",
+            "kapanis": 9.1,
+            "gunluk_getiri": -2.05,
+            "gunluk_hacim": 11987314,
+            "piyasa_degeri": 1015560000.0
+        },
+        {
+            "code": "AVHOL",
+            "kapanis": 37.08,
+            "gunluk_getiri": -1.12,
+            "gunluk_hacim": 70712530,
+            "piyasa_degeri": 1381230000.0
+        },
+        {
+            "code": "AVOD",
+            "kapanis": 2.58,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 12516202,
+            "piyasa_degeri": 696600000.0
+        },
+        {
+            "code": "AVPGY",
+            "kapanis": 56.95,
+            "gunluk_getiri": 1.61,
+            "gunluk_hacim": 57592204,
+            "piyasa_degeri": 22780000000.0
+        },
+        {
+            "code": "AVTUR",
+            "kapanis": 10.57,
+            "gunluk_getiri": 2.03,
+            "gunluk_hacim": 3203469,
+            "piyasa_degeri": 475650000.0
+        },
+        {
+            "code": "AYCES",
+            "kapanis": 441.5,
+            "gunluk_getiri": 1.79,
+            "gunluk_hacim": 14761191,
+            "piyasa_degeri": 11037500000.0
+        },
+        {
+            "code": "AYDEM",
+            "kapanis": 18.76,
+            "gunluk_getiri": 1.68,
+            "gunluk_hacim": 19072905,
+            "piyasa_degeri": 13225800000.000002
+        },
+        {
+            "code": "AYEN",
+            "kapanis": 26.12,
+            "gunluk_getiri": -0.15,
+            "gunluk_hacim": 14131872,
+            "piyasa_degeri": 7248300000.0
+        },
+        {
+            "code": "AYES",
+            "kapanis": 8.6,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 1365439,
+            "piyasa_degeri": 1290000000.0
+        },
+        {
+            "code": "AYGAZ",
+            "kapanis": 143.6,
+            "gunluk_getiri": -0.14,
+            "gunluk_hacim": 44046906,
+            "piyasa_degeri": 31563390141.199997
+        },
+        {
+            "code": "AZTEK",
+            "kapanis": 40.8,
+            "gunluk_getiri": 0.79,
+            "gunluk_hacim": 36093692,
+            "piyasa_degeri": 4079999999.9999995
+        },
+        {
+            "code": "BAGFS",
+            "kapanis": 21.7,
+            "gunluk_getiri": 9.98,
+            "gunluk_hacim": 86412665,
+            "piyasa_degeri": 2929500000.0
+        },
+        {
+            "code": "BAHKM",
+            "kapanis": 42.88,
+            "gunluk_getiri": 0.66,
+            "gunluk_hacim": 32992120,
+            "piyasa_degeri": 2358400000.0
+        },
+        {
+            "code": "BAKAB",
+            "kapanis": 29.08,
+            "gunluk_getiri": 1.82,
+            "gunluk_hacim": 7130483,
+            "piyasa_degeri": 2093759999.9999998
+        },
+        {
+            "code": "BALAT",
+            "kapanis": 71.65,
+            "gunluk_getiri": -4.66,
+            "gunluk_hacim": 4380403,
+            "piyasa_degeri": 994393521.9000001
+        },
+        {
+            "code": "BALSU",
+            "kapanis": 16.22,
+            "gunluk_getiri": 9.97,
+            "gunluk_hacim": 227133025,
+            "piyasa_degeri": 18036640000.0
+        },
+        {
+            "code": "BANVT",
+            "kapanis": 275.0,
+            "gunluk_getiri": -1.35,
+            "gunluk_hacim": 136113653,
+            "piyasa_degeri": 27506484225.0
+        },
+        {
+            "code": "BARMA",
+            "kapanis": 19.05,
+            "gunluk_getiri": 8.55,
+            "gunluk_hacim": 62919275,
+            "piyasa_degeri": 5000625000.0
+        },
+        {
+            "code": "BASCM",
+            "kapanis": 10.13,
+            "gunluk_getiri": 1.5,
+            "gunluk_hacim": 702332,
+            "piyasa_degeri": 6685800000.000001
+        },
+        {
+            "code": "BASGZ",
+            "kapanis": 28.48,
+            "gunluk_getiri": 2.01,
+            "gunluk_hacim": 15169563,
+            "piyasa_degeri": 19936000000.0
+        },
+        {
+            "code": "BAYRK",
+            "kapanis": 17.94,
+            "gunluk_getiri": -0.11,
+            "gunluk_hacim": 45717803,
+            "piyasa_degeri": 845422500.0000001
+        },
+        {
+            "code": "BEGYO",
+            "kapanis": 16.33,
+            "gunluk_getiri": 1.11,
+            "gunluk_hacim": 398537570,
+            "piyasa_degeri": 13308949999.999998
+        },
+        {
+            "code": "BERA",
+            "kapanis": 17.05,
+            "gunluk_getiri": 0.89,
+            "gunluk_hacim": 104460481,
+            "piyasa_degeri": 11648560000.0
+        },
+        {
+            "code": "BEYAZ",
+            "kapanis": 24.12,
+            "gunluk_getiri": 2.73,
+            "gunluk_hacim": 156478505,
+            "piyasa_degeri": 2404462500.0
+        },
+        {
+            "code": "BFREN",
+            "kapanis": 654.0,
+            "gunluk_getiri": 1.32,
+            "gunluk_hacim": 28920894,
+            "piyasa_degeri": 20036390682.0
+        },
+        {
+            "code": "BIENY",
+            "kapanis": 34.66,
+            "gunluk_getiri": -1.92,
+            "gunluk_hacim": 113470006,
+            "piyasa_degeri": 12512259999.999998
+        },
+        {
+            "code": "BIGCH",
+            "kapanis": 27.62,
+            "gunluk_getiri": -0.65,
+            "gunluk_hacim": 40051413,
+            "piyasa_degeri": 2955340000.0
+        },
+        {
+            "code": "BIGEN",
+            "kapanis": 12.16,
+            "gunluk_getiri": 0.33,
+            "gunluk_hacim": 531963398,
+            "piyasa_degeri": 7016320000.0
+        },
+        {
+            "code": "BIMAS",
+            "kapanis": 467.5,
+            "gunluk_getiri": 3.31,
+            "gunluk_hacim": 3238931573,
+            "piyasa_degeri": 283866000000.0
+        },
+        {
+            "code": "BINBN",
+            "kapanis": 209.1,
+            "gunluk_getiri": 1.75,
+            "gunluk_hacim": 194995488,
+            "piyasa_degeri": 23419200000.0
+        },
+        {
+            "code": "BINHO",
+            "kapanis": 268.5,
+            "gunluk_getiri": 7.74,
+            "gunluk_hacim": 433185153,
+            "piyasa_degeri": 12619500000.0
+        },
+        {
+            "code": "BIOEN",
+            "kapanis": 19.91,
+            "gunluk_getiri": 3.11,
+            "gunluk_hacim": 185874143,
+            "piyasa_degeri": 9955000000.0
+        },
+        {
+            "code": "BIZIM",
+            "kapanis": 25.78,
+            "gunluk_getiri": 3.04,
+            "gunluk_hacim": 5753846,
+            "piyasa_degeri": 2074673187.72
+        },
+        {
+            "code": "BJKAS",
+            "kapanis": 3.45,
+            "gunluk_getiri": 3.29,
+            "gunluk_hacim": 74340204,
+            "piyasa_degeri": 4140000000.0
+        },
+        {
+            "code": "BLCYT",
+            "kapanis": 15.4,
+            "gunluk_getiri": 2.87,
+            "gunluk_hacim": 9853400,
+            "piyasa_degeri": 1540000000.0
+        },
+        {
+            "code": "BMSCH",
+            "kapanis": 14.32,
+            "gunluk_getiri": 0.85,
+            "gunluk_hacim": 24445085,
+            "piyasa_degeri": 1432000000.0
+        },
+        {
+            "code": "BMSTL",
+            "kapanis": 43.84,
+            "gunluk_getiri": -0.59,
+            "gunluk_hacim": 100273578,
+            "piyasa_degeri": 6576000000.000001
+        },
+        {
+            "code": "BNTAS",
+            "kapanis": 5.74,
+            "gunluk_getiri": 1.77,
+            "gunluk_hacim": 25601314,
+            "piyasa_degeri": 1388362500.0
+        },
+        {
+            "code": "BOBET",
+            "kapanis": 19.05,
+            "gunluk_getiri": 1.01,
+            "gunluk_hacim": 28498465,
+            "piyasa_degeri": 7239000000.0
+        },
+        {
+            "code": "BORLS",
+            "kapanis": 91.55,
+            "gunluk_getiri": 0.44,
+            "gunluk_hacim": 66298070,
+            "piyasa_degeri": 15444485000.0
+        },
+        {
+            "code": "BORSK",
+            "kapanis": 21.12,
+            "gunluk_getiri": 3.63,
+            "gunluk_hacim": 43114195,
+            "piyasa_degeri": 5068800000.0
+        },
+        {
+            "code": "BOSSA",
+            "kapanis": 6.96,
+            "gunluk_getiri": -1.69,
+            "gunluk_hacim": 38892315,
+            "piyasa_degeri": 9048000000.0
+        },
+        {
+            "code": "BRISA",
+            "kapanis": 85.75,
+            "gunluk_getiri": 2.63,
+            "gunluk_hacim": 26985313,
+            "piyasa_degeri": 26163772031.25
+        },
+        {
+            "code": "BRKO",
+            "kapanis": 13.48,
+            "gunluk_getiri": 5.81,
+            "gunluk_hacim": 19829200,
+            "piyasa_degeri": 1887200000.0
+        },
+        {
+            "code": "BRKSN",
+            "kapanis": 22.8,
+            "gunluk_getiri": 0.26,
+            "gunluk_hacim": 6829072,
+            "piyasa_degeri": 711360000.0
+        },
+        {
+            "code": "BRKVY",
+            "kapanis": 56.2,
+            "gunluk_getiri": 1.81,
+            "gunluk_hacim": 61572375,
+            "piyasa_degeri": 3147200000.0
+        },
+        {
+            "code": "BRLSM",
+            "kapanis": 16.95,
+            "gunluk_getiri": 4.05,
+            "gunluk_hacim": 120759595,
+            "piyasa_degeri": 3796800000.0
+        },
+        {
+            "code": "BRMEN",
+            "kapanis": 5.8,
+            "gunluk_getiri": -1.02,
+            "gunluk_hacim": 1220727,
+            "piyasa_degeri": 258836721.79999998
+        },
+        {
+            "code": "BRSAN",
+            "kapanis": 392.0,
+            "gunluk_getiri": 1.29,
+            "gunluk_hacim": 238138620,
+            "piyasa_degeri": 55574460144.0
+        },
+        {
+            "code": "BRYAT",
+            "kapanis": 1980.0,
+            "gunluk_getiri": -2.27,
+            "gunluk_hacim": 109391131,
+            "piyasa_degeri": 55687500000.0
+        },
+        {
+            "code": "BSOKE",
+            "kapanis": 14.61,
+            "gunluk_getiri": 4.36,
+            "gunluk_hacim": 264707090,
+            "piyasa_degeri": 23376000000.0
+        },
+        {
+            "code": "BTCIM",
+            "kapanis": 4.37,
+            "gunluk_getiri": 1.86,
+            "gunluk_hacim": 264103480,
+            "piyasa_degeri": 24384600000.0
+        },
+        {
+            "code": "BUCIM",
+            "kapanis": 7.83,
+            "gunluk_getiri": 2.22,
+            "gunluk_hacim": 44805714,
+            "piyasa_degeri": 11745000000.0
+        },
+        {
+            "code": "BULGS",
+            "kapanis": 26.62,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 1183396624,
+            "piyasa_degeri": 7134160000.0
+        },
+        {
+            "code": "BURCE",
+            "kapanis": 15.17,
+            "gunluk_getiri": -0.2,
+            "gunluk_hacim": 20668078,
+            "piyasa_degeri": 1277920800.0
+        },
+        {
+            "code": "BURVA",
+            "kapanis": 112.6,
+            "gunluk_getiri": -1.92,
+            "gunluk_hacim": 11918679,
+            "piyasa_degeri": 827347867.1999999
+        },
+        {
+            "code": "BVSAN",
+            "kapanis": 112.9,
+            "gunluk_getiri": 1.26,
+            "gunluk_hacim": 135185264,
+            "piyasa_degeri": 4245040000.0
+        },
+        {
+            "code": "BYDNR",
+            "kapanis": 20.66,
+            "gunluk_getiri": 2.38,
+            "gunluk_hacim": 14941165,
+            "piyasa_degeri": 1735440000.0
+        },
+        {
+            "code": "CANTE",
+            "kapanis": 1.55,
+            "gunluk_getiri": 1.31,
+            "gunluk_hacim": 211737248,
+            "piyasa_degeri": 10850000000.0
+        },
+        {
+            "code": "CASA",
+            "kapanis": 62.4,
+            "gunluk_getiri": 1.88,
+            "gunluk_hacim": 1652852,
+            "piyasa_degeri": 305760000.0
+        },
+        {
+            "code": "CATES",
+            "kapanis": 28.64,
+            "gunluk_getiri": 2.07,
+            "gunluk_hacim": 16664765,
+            "piyasa_degeri": 4731328000.0
+        },
+        {
+            "code": "CCOLA",
+            "kapanis": 52.55,
+            "gunluk_getiri": 0.29,
+            "gunluk_hacim": 202370574,
+            "piyasa_degeri": 147039030535.1
+        },
+        {
+            "code": "CELHA",
+            "kapanis": 20.78,
+            "gunluk_getiri": 2.47,
+            "gunluk_hacim": 33596242,
+            "piyasa_degeri": 2099469085.5800002
+        },
+        {
+            "code": "CEMAS",
+            "kapanis": 4.35,
+            "gunluk_getiri": 9.85,
+            "gunluk_hacim": 109254655,
+            "piyasa_degeri": 3440849999.9999995
+        },
+        {
+            "code": "CEMTS",
+            "kapanis": 13.56,
+            "gunluk_getiri": 2.81,
+            "gunluk_hacim": 517581916,
+            "piyasa_degeri": 6780000000.0
+        },
+        {
+            "code": "CEMZY",
+            "kapanis": 16.16,
+            "gunluk_getiri": 6.46,
+            "gunluk_hacim": 870128842,
+            "piyasa_degeri": 6496320000.0
+        },
+        {
+            "code": "CEOEM",
+            "kapanis": 34.92,
+            "gunluk_getiri": -0.91,
+            "gunluk_hacim": 95125485,
+            "piyasa_degeri": 1536480000.0
+        },
+        {
+            "code": "CGCAM",
+            "kapanis": 31.26,
+            "gunluk_getiri": -1.14,
+            "gunluk_hacim": 364846200,
+            "piyasa_degeri": 5251680000.0
+        },
+        {
+            "code": "CIMSA",
+            "kapanis": 47.74,
+            "gunluk_getiri": 3.07,
+            "gunluk_hacim": 911734923,
+            "piyasa_degeri": 45142518827.560005
+        },
+        {
+            "code": "CLEBI",
+            "kapanis": 3092.5,
+            "gunluk_getiri": -3.96,
+            "gunluk_hacim": 322764318,
+            "piyasa_degeri": 75147750000.0
+        },
+        {
+            "code": "CMBTN",
+            "kapanis": 2432.0,
+            "gunluk_getiri": 3.93,
+            "gunluk_hacim": 117876155,
+            "piyasa_degeri": 4304640000.0
+        },
+        {
+            "code": "CMENT",
+            "kapanis": 386.25,
+            "gunluk_getiri": 1.25,
+            "gunluk_hacim": 2734370,
+            "piyasa_degeri": 33647188833.75
+        },
+        {
+            "code": "CONSE",
+            "kapanis": 2.79,
+            "gunluk_getiri": 7.31,
+            "gunluk_hacim": 56443903,
+            "piyasa_degeri": 2151090000.0
+        },
+        {
+            "code": "COSMO",
+            "kapanis": 107.0,
+            "gunluk_getiri": 2.29,
+            "gunluk_hacim": 4421117,
+            "piyasa_degeri": 694932258.0
+        },
+        {
+            "code": "CRDFA",
+            "kapanis": 9.1,
+            "gunluk_getiri": -0.33,
+            "gunluk_hacim": 58576334,
+            "piyasa_degeri": 910000000.0
+        },
+        {
+            "code": "CRFSA",
+            "kapanis": 82.5,
+            "gunluk_getiri": 0.98,
+            "gunluk_hacim": 15791075,
+            "piyasa_degeri": 10541335612.5
+        },
+        {
+            "code": "CUSAN",
+            "kapanis": 23.7,
+            "gunluk_getiri": 3.49,
+            "gunluk_hacim": 24233985,
+            "piyasa_degeri": 1688625000.0
+        },
+        {
+            "code": "CVKMD",
+            "kapanis": 11.65,
+            "gunluk_getiri": 5.91,
+            "gunluk_hacim": 883503288,
+            "piyasa_degeri": 16310000000.0
+        },
+        {
+            "code": "CWENE",
+            "kapanis": 16.91,
+            "gunluk_getiri": 4.51,
+            "gunluk_hacim": 207139221,
+            "piyasa_degeri": 16910000000.0
+        },
+        {
+            "code": "DAGHL",
+            "kapanis": 88.8,
+            "gunluk_getiri": 9.97,
+            "gunluk_hacim": 148554059,
+            "piyasa_degeri": 2664000000.0
+        },
+        {
+            "code": "DAGI",
+            "kapanis": 6.4,
+            "gunluk_getiri": -5.74,
+            "gunluk_hacim": 57070110,
+            "piyasa_degeri": 2560000000.0
+        },
+        {
+            "code": "DAPGM",
+            "kapanis": 7.61,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 78786553,
+            "piyasa_degeri": 20166500000.0
+        },
+        {
+            "code": "DARDL",
+            "kapanis": 4.94,
+            "gunluk_getiri": 2.28,
+            "gunluk_hacim": 15130222,
+            "piyasa_degeri": 2895330458.0200005
+        },
+        {
+            "code": "DCTTR",
+            "kapanis": 40.4,
+            "gunluk_getiri": -2.08,
+            "gunluk_hacim": 222302198,
+            "piyasa_degeri": 5252000000.0
+        },
+        {
+            "code": "DENGE",
+            "kapanis": 2.75,
+            "gunluk_getiri": 1.1,
+            "gunluk_hacim": 24622498,
+            "piyasa_degeri": 825000000.0
+        },
+        {
+            "code": "DERHL",
+            "kapanis": 67.55,
+            "gunluk_getiri": 9.93,
+            "gunluk_hacim": 90981029,
+            "piyasa_degeri": 13326353368.65
+        },
+        {
+            "code": "DERIM",
+            "kapanis": 42.5,
+            "gunluk_getiri": 8.14,
+            "gunluk_hacim": 107446662,
+            "piyasa_degeri": 2295000000.0
+        },
+        {
+            "code": "DESA",
+            "kapanis": 9.12,
+            "gunluk_getiri": 6.54,
+            "gunluk_hacim": 39909692,
+            "piyasa_degeri": 4468800000.0
+        },
+        {
+            "code": "DESPC",
+            "kapanis": 45.24,
+            "gunluk_getiri": 5.31,
+            "gunluk_hacim": 15845815,
+            "piyasa_degeri": 1040520000.0
+        },
+        {
+            "code": "DEVA",
+            "kapanis": 59.3,
+            "gunluk_getiri": 2.24,
+            "gunluk_hacim": 30822162,
+            "piyasa_degeri": 11861143719.1
+        },
+        {
+            "code": "DGATE",
+            "kapanis": 52.5,
+            "gunluk_getiri": 0.96,
+            "gunluk_hacim": 12358199,
+            "piyasa_degeri": 1575000000.0
+        },
+        {
+            "code": "DGGYO",
+            "kapanis": 34.24,
+            "gunluk_getiri": 1.06,
+            "gunluk_hacim": 3304412,
+            "piyasa_degeri": 11367946592.640001
+        },
+        {
+            "code": "DGNMO",
+            "kapanis": 6.55,
+            "gunluk_getiri": 2.83,
+            "gunluk_hacim": 23482360,
+            "piyasa_degeri": 2292500000.0
+        },
+        {
+            "code": "DIRIT",
+            "kapanis": 22.3,
+            "gunluk_getiri": 3.05,
+            "gunluk_hacim": 1642864,
+            "piyasa_degeri": 237495000.0
+        },
+        {
+            "code": "DITAS",
+            "kapanis": 13.1,
+            "gunluk_getiri": 4.13,
+            "gunluk_hacim": 11465841,
+            "piyasa_degeri": 1113500000.0
+        },
+        {
+            "code": "DMRGD",
+            "kapanis": 15.56,
+            "gunluk_getiri": 8.66,
+            "gunluk_hacim": 110043895,
+            "piyasa_degeri": 2883268000.0
+        },
+        {
+            "code": "DMSAS",
+            "kapanis": 7.27,
+            "gunluk_getiri": 0.41,
+            "gunluk_hacim": 16835968,
+            "piyasa_degeri": 1454000000.0
+        },
+        {
+            "code": "DNISI",
+            "kapanis": 25.5,
+            "gunluk_getiri": 1.84,
+            "gunluk_hacim": 34202947,
+            "piyasa_degeri": 3053067187.5
+        },
+        {
+            "code": "DOAS",
+            "kapanis": 229.8,
+            "gunluk_getiri": 0.31,
+            "gunluk_hacim": 540331155,
+            "piyasa_degeri": 50556000000.0
+        },
+        {
+            "code": "DOBUR",
+            "kapanis": 216.8,
+            "gunluk_getiri": 0.7,
+            "gunluk_hacim": 38530675,
+            "piyasa_degeri": 4240429140.0
+        },
+        {
+            "code": "DOCO",
+            "kapanis": 5600.0,
+            "gunluk_getiri": 2.94,
+            "gunluk_hacim": 330030480,
+            "piyasa_degeri": 61507364800.0
+        },
+        {
+            "code": "DOFER",
+            "kapanis": 25.44,
+            "gunluk_getiri": 1.6,
+            "gunluk_hacim": 10281788,
+            "piyasa_degeri": 1418280000.0
+        },
+        {
+            "code": "DOGUB",
+            "kapanis": 16.49,
+            "gunluk_getiri": 1.48,
+            "gunluk_hacim": 2152884,
+            "piyasa_degeri": 643109999.9999999
+        },
+        {
+            "code": "DOHOL",
+            "kapanis": 16.56,
+            "gunluk_getiri": 0.18,
+            "gunluk_hacim": 545577512,
+            "piyasa_degeri": 43337455266.96
+        },
+        {
+            "code": "DOKTA",
+            "kapanis": 20.1,
+            "gunluk_getiri": 2.55,
+            "gunluk_hacim": 7781312,
+            "piyasa_degeri": 6512400000.0
+        },
+        {
+            "code": "DSTKF",
+            "kapanis": 139.9,
+            "gunluk_getiri": -4.44,
+            "gunluk_hacim": 531699646,
+            "piyasa_degeri": 46633333286.700005
+        },
+        {
+            "code": "DURDO",
+            "kapanis": 3.75,
+            "gunluk_getiri": 4.46,
+            "gunluk_hacim": 61647747,
+            "piyasa_degeri": 1875000000.0
+        },
+        {
+            "code": "DURKN",
+            "kapanis": 17.34,
+            "gunluk_getiri": 9.96,
+            "gunluk_hacim": 131315195,
+            "piyasa_degeri": 2297550000.0
+        },
+        {
+            "code": "DYOBY",
+            "kapanis": 17.68,
+            "gunluk_getiri": 2.79,
+            "gunluk_hacim": 340150936,
+            "piyasa_degeri": 5304000000.0
+        },
+        {
+            "code": "DZGYO",
+            "kapanis": 7.25,
+            "gunluk_getiri": 2.69,
+            "gunluk_hacim": 50210288,
+            "piyasa_degeri": 2900000000.0
+        },
+        {
+            "code": "EBEBK",
+            "kapanis": 47.96,
+            "gunluk_getiri": 0.59,
+            "gunluk_hacim": 15334312,
+            "piyasa_degeri": 7673600000.0
+        },
+        {
+            "code": "ECILC",
+            "kapanis": 45.2,
+            "gunluk_getiri": 0.62,
+            "gunluk_hacim": 99155132,
+            "piyasa_degeri": 30973752000.000004
+        },
+        {
+            "code": "ECZYT",
+            "kapanis": 178.9,
+            "gunluk_getiri": 1.71,
+            "gunluk_hacim": 36513698,
+            "piyasa_degeri": 18784500000.0
+        },
+        {
+            "code": "EDATA",
+            "kapanis": 4.22,
+            "gunluk_getiri": 0.96,
+            "gunluk_hacim": 24556717,
+            "piyasa_degeri": 1697157400.0
+        },
+        {
+            "code": "EDIP",
+            "kapanis": 20.24,
+            "gunluk_getiri": 3.42,
+            "gunluk_hacim": 29590049,
+            "piyasa_degeri": 1315600000.0
+        },
+        {
+            "code": "EFORC",
+            "kapanis": 82.55,
+            "gunluk_getiri": 1.66,
+            "gunluk_hacim": 140818875,
+            "piyasa_degeri": 29965650000.0
+        },
+        {
+            "code": "EGEEN",
+            "kapanis": 9170.0,
+            "gunluk_getiri": 0.33,
+            "gunluk_hacim": 117102723,
+            "piyasa_degeri": 28885500000.0
+        },
+        {
+            "code": "EGEGY",
+            "kapanis": 17.0,
+            "gunluk_getiri": 9.11,
+            "gunluk_hacim": 158398255,
+            "piyasa_degeri": 3400000000.0
+        },
+        {
+            "code": "EGEPO",
+            "kapanis": 6.42,
+            "gunluk_getiri": -2.13,
+            "gunluk_hacim": 40965904,
+            "piyasa_degeri": 3210000000.0
+        },
+        {
+            "code": "EGGUB",
+            "kapanis": 67.1,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 192113586,
+            "piyasa_degeri": 6709999999.999999
+        },
+        {
+            "code": "EGPRO",
+            "kapanis": 23.64,
+            "gunluk_getiri": 2.78,
+            "gunluk_hacim": 25731767,
+            "piyasa_degeri": 12883800000.0
+        },
+        {
+            "code": "EGSER",
+            "kapanis": 3.26,
+            "gunluk_getiri": 2.19,
+            "gunluk_hacim": 7156887,
+            "piyasa_degeri": 2347200000.0
+        },
+        {
+            "code": "EKGYO",
+            "kapanis": 12.92,
+            "gunluk_getiri": -1.37,
+            "gunluk_hacim": 2185798640,
+            "piyasa_degeri": 49096000000.0
+        },
+        {
+            "code": "EKIZ",
+            "kapanis": 63.5,
+            "gunluk_getiri": 9.29,
+            "gunluk_hacim": 2505470,
+            "piyasa_degeri": 589563845.0
+        },
+        {
+            "code": "EKOS",
+            "kapanis": 20.34,
+            "gunluk_getiri": 9.95,
+            "gunluk_hacim": 90017771,
+            "piyasa_degeri": 5695200000.0
+        },
+        {
+            "code": "EKSUN",
+            "kapanis": 5.37,
+            "gunluk_getiri": 3.47,
+            "gunluk_hacim": 10845182,
+            "piyasa_degeri": 3222000000.0
+        },
+        {
+            "code": "ELITE",
+            "kapanis": 45.72,
+            "gunluk_getiri": 5.64,
+            "gunluk_hacim": 252872230,
+            "piyasa_degeri": 5925312000.0
+        },
+        {
+            "code": "EMKEL",
+            "kapanis": 23.32,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 184229818,
+            "piyasa_degeri": 3498000000.0
+        },
+        {
+            "code": "EMNIS",
+            "kapanis": 325.0,
+            "gunluk_getiri": -1.52,
+            "gunluk_hacim": 2739228,
+            "piyasa_degeri": 2015000000.0
+        },
+        {
+            "code": "ENDAE",
+            "kapanis": 12.95,
+            "gunluk_getiri": 1.97,
+            "gunluk_hacim": 123999212,
+            "piyasa_degeri": 5661703351.5
+        },
+        {
+            "code": "ENERY",
+            "kapanis": 3.51,
+            "gunluk_getiri": 2.93,
+            "gunluk_hacim": 135973555,
+            "piyasa_degeri": 31589999999.999996
+        },
+        {
+            "code": "ENJSA",
+            "kapanis": 63.05,
+            "gunluk_getiri": 3.02,
+            "gunluk_hacim": 365315432,
+            "piyasa_degeri": 74466398369.34999
+        },
+        {
+            "code": "ENKAI",
+            "kapanis": 59.4,
+            "gunluk_getiri": -1.0,
+            "gunluk_hacim": 961538569,
+            "piyasa_degeri": 356400000000.0
+        },
+        {
+            "code": "ENSRI",
+            "kapanis": 19.66,
+            "gunluk_getiri": -0.3,
+            "gunluk_hacim": 78255464,
+            "piyasa_degeri": 2296288000.0
+        },
+        {
+            "code": "ENTRA",
+            "kapanis": 10.79,
+            "gunluk_getiri": 3.55,
+            "gunluk_hacim": 385399341,
+            "piyasa_degeri": 19907550000.0
+        },
+        {
+            "code": "EPLAS",
+            "kapanis": 4.8,
+            "gunluk_getiri": 3.45,
+            "gunluk_hacim": 16687291,
+            "piyasa_degeri": 914953070.4
+        },
+        {
+            "code": "ERBOS",
+            "kapanis": 167.7,
+            "gunluk_getiri": -0.18,
+            "gunluk_hacim": 9548883,
+            "piyasa_degeri": 3354000000.0
+        },
+        {
+            "code": "ERCB",
+            "kapanis": 82.8,
+            "gunluk_getiri": 1.47,
+            "gunluk_hacim": 24987484,
+            "piyasa_degeri": 6439395826.8
+        },
+        {
+            "code": "EREGL",
+            "kapanis": 21.6,
+            "gunluk_getiri": 1.41,
+            "gunluk_hacim": 2636000875,
+            "piyasa_degeri": 151200000000.0
+        },
+        {
+            "code": "ERSU",
+            "kapanis": 18.5,
+            "gunluk_getiri": 8.12,
+            "gunluk_hacim": 64780402,
+            "piyasa_degeri": 666000000.0
+        },
+        {
+            "code": "ESCAR",
+            "kapanis": 53.5,
+            "gunluk_getiri": 7.21,
+            "gunluk_hacim": 110597779,
+            "piyasa_degeri": 26750000000.0
+        },
+        {
+            "code": "ESCOM",
+            "kapanis": 2.69,
+            "gunluk_getiri": 9.8,
+            "gunluk_hacim": 53893821,
+            "piyasa_degeri": 1896025477.6499999
+        },
+        {
+            "code": "ESEN",
+            "kapanis": 39.56,
+            "gunluk_getiri": 0.41,
+            "gunluk_hacim": 71462211,
+            "piyasa_degeri": 10285600000.0
+        },
+        {
+            "code": "ETILR",
+            "kapanis": 12.96,
+            "gunluk_getiri": 9.92,
+            "gunluk_hacim": 210243479,
+            "piyasa_degeri": 1555200000.0
+        },
+        {
+            "code": "ETYAT",
+            "kapanis": 10.28,
+            "gunluk_getiri": 2.39,
+            "gunluk_hacim": 4867647,
+            "piyasa_degeri": 205600000.0
+        },
+        {
+            "code": "EUHOL",
+            "kapanis": 16.12,
+            "gunluk_getiri": -9.99,
+            "gunluk_hacim": 17795271,
+            "piyasa_degeri": 2418000000.0
+        },
+        {
+            "code": "EUKYO",
+            "kapanis": 11.59,
+            "gunluk_getiri": -0.09,
+            "gunluk_hacim": 2430916,
+            "piyasa_degeri": 231800000.0
+        },
+        {
+            "code": "EUPWR",
+            "kapanis": 28.7,
+            "gunluk_getiri": 1.06,
+            "gunluk_hacim": 120047974,
+            "piyasa_degeri": 18942000000.0
+        },
+        {
+            "code": "EUREN",
+            "kapanis": 4.71,
+            "gunluk_getiri": 9.79,
+            "gunluk_hacim": 202987703,
+            "piyasa_degeri": 9891000000.0
+        },
+        {
+            "code": "EUYO",
+            "kapanis": 11.65,
+            "gunluk_getiri": 3.01,
+            "gunluk_hacim": 8819675,
+            "piyasa_degeri": 233000000.0
+        },
+        {
+            "code": "EYGYO",
+            "kapanis": 2.38,
+            "gunluk_getiri": 0.42,
+            "gunluk_hacim": 26271386,
+            "piyasa_degeri": 1666000000.0
+        },
+        {
+            "code": "FADE",
+            "kapanis": 13.07,
+            "gunluk_getiri": 2.11,
+            "gunluk_hacim": 6837572,
+            "piyasa_degeri": 1096507650.0
+        },
+        {
+            "code": "FENER",
+            "kapanis": 51.65,
+            "gunluk_getiri": -1.34,
+            "gunluk_hacim": 262013665,
+            "piyasa_degeri": 12912500000.0
+        },
+        {
+            "code": "FLAP",
+            "kapanis": 7.57,
+            "gunluk_getiri": 2.3,
+            "gunluk_hacim": 13840819,
+            "piyasa_degeri": 709687500.0
+        },
+        {
+            "code": "FMIZP",
+            "kapanis": 305.0,
+            "gunluk_getiri": 1.75,
+            "gunluk_hacim": 23080043,
+            "piyasa_degeri": 4354420950.0
+        },
+        {
+            "code": "FONET",
+            "kapanis": 15.57,
+            "gunluk_getiri": 5.63,
+            "gunluk_hacim": 159292556,
+            "piyasa_degeri": 2242080000.0
+        },
+        {
+            "code": "FORMT",
+            "kapanis": 6.34,
+            "gunluk_getiri": -2.16,
+            "gunluk_hacim": 245613892,
+            "piyasa_degeri": 3411750235.68
+        },
+        {
+            "code": "FORTE",
+            "kapanis": 73.85,
+            "gunluk_getiri": -2.06,
+            "gunluk_hacim": 49775331,
+            "piyasa_degeri": 4947950000.0
+        },
+        {
+            "code": "FRIGO",
+            "kapanis": 7.64,
+            "gunluk_getiri": 1.46,
+            "gunluk_hacim": 21750729,
+            "piyasa_degeri": 1123862909.0
+        },
+        {
+            "code": "FROTO",
+            "kapanis": 1032.0,
+            "gunluk_getiri": -0.39,
+            "gunluk_hacim": 1060428835,
+            "piyasa_degeri": 362139120000.0
+        },
+        {
+            "code": "FZLGY",
+            "kapanis": 34.4,
+            "gunluk_getiri": -0.46,
+            "gunluk_hacim": 90029674,
+            "piyasa_degeri": 10939200000.0
+        },
+        {
+            "code": "GARAN",
+            "kapanis": 110.4,
+            "gunluk_getiri": 0.55,
+            "gunluk_hacim": 2328622339,
+            "piyasa_degeri": 463680000000.0
+        },
+        {
+            "code": "GARFA",
+            "kapanis": 17.0,
+            "gunluk_getiri": 5.0,
+            "gunluk_hacim": 21175567,
+            "piyasa_degeri": 6757500000.0
+        },
+        {
+            "code": "GEDIK",
+            "kapanis": 7.95,
+            "gunluk_getiri": 1.4,
+            "gunluk_hacim": 2876914,
+            "piyasa_degeri": 7950000000.0
+        },
+        {
+            "code": "GEDZA",
+            "kapanis": 26.6,
+            "gunluk_getiri": 3.18,
+            "gunluk_hacim": 34732088,
+            "piyasa_degeri": 1241049600.0
+        },
+        {
+            "code": "GENIL",
+            "kapanis": 169.9,
+            "gunluk_getiri": 8.22,
+            "gunluk_hacim": 689142810,
+            "piyasa_degeri": 50970000000.0
+        },
+        {
+            "code": "GENTS",
+            "kapanis": 22.82,
+            "gunluk_getiri": 7.84,
+            "gunluk_hacim": 129159959,
+            "piyasa_degeri": 6846000000.0
+        },
+        {
+            "code": "GEREL",
+            "kapanis": 8.54,
+            "gunluk_getiri": 2.28,
+            "gunluk_hacim": 43376477,
+            "piyasa_degeri": 2049599999.9999998
+        },
+        {
+            "code": "GESAN",
+            "kapanis": 43.86,
+            "gunluk_getiri": 0.97,
+            "gunluk_hacim": 119065738,
+            "piyasa_degeri": 20175600000.0
+        },
+        {
+            "code": "GIPTA",
+            "kapanis": 60.3,
+            "gunluk_getiri": 0.08,
+            "gunluk_hacim": 153570740,
+            "piyasa_degeri": 7959600000.0
+        },
+        {
+            "code": "GLBMD",
+            "kapanis": 9.9,
+            "gunluk_getiri": 1.12,
+            "gunluk_hacim": 2460066,
+            "piyasa_degeri": 1168200000.0
+        },
+        {
+            "code": "GLCVY",
+            "kapanis": 56.0,
+            "gunluk_getiri": 9.37,
+            "gunluk_hacim": 98883502,
+            "piyasa_degeri": 7823200000.0
+        },
+        {
+            "code": "GLRMK",
+            "kapanis": 150.5,
+            "gunluk_getiri": 0.27,
+            "gunluk_hacim": 531475768,
+            "piyasa_degeri": 48551300000.0
+        },
+        {
+            "code": "GLRYH",
+            "kapanis": 3.01,
+            "gunluk_getiri": 1.69,
+            "gunluk_hacim": 79989564,
+            "piyasa_degeri": 1805999999.9999998
+        },
+        {
+            "code": "GLYHO",
+            "kapanis": 7.18,
+            "gunluk_getiri": -0.14,
+            "gunluk_hacim": 175832464,
+            "piyasa_degeri": 14001000000.0
+        },
+        {
+            "code": "GMTAS",
+            "kapanis": 14.06,
+            "gunluk_getiri": 0.21,
+            "gunluk_hacim": 27599580,
+            "piyasa_degeri": 2097752000.0
+        },
+        {
+            "code": "GOKNR",
+            "kapanis": 24.34,
+            "gunluk_getiri": 3.22,
+            "gunluk_hacim": 136151568,
+            "piyasa_degeri": 8519000000.0
+        },
+        {
+            "code": "GOLTS",
+            "kapanis": 404.0,
+            "gunluk_getiri": 2.41,
+            "gunluk_hacim": 66010962,
+            "piyasa_degeri": 7272000000.0
+        },
+        {
+            "code": "GOODY",
+            "kapanis": 15.99,
+            "gunluk_getiri": 0.13,
+            "gunluk_hacim": 35735380,
+            "piyasa_degeri": 4317300000.0
+        },
+        {
+            "code": "GOZDE",
+            "kapanis": 19.76,
+            "gunluk_getiri": 2.44,
+            "gunluk_hacim": 19752574,
+            "piyasa_degeri": 7607600000.000001
+        },
+        {
+            "code": "GRNYO",
+            "kapanis": 8.34,
+            "gunluk_getiri": 2.46,
+            "gunluk_hacim": 4351999,
+            "piyasa_degeri": 312750000.0
+        },
+        {
+            "code": "GRSEL",
+            "kapanis": 282.5,
+            "gunluk_getiri": 2.73,
+            "gunluk_hacim": 308227290,
+            "piyasa_degeri": 28815000000.0
+        },
+        {
+            "code": "GRTHO",
+            "kapanis": 378.0,
+            "gunluk_getiri": 4.71,
+            "gunluk_hacim": 149817718,
+            "piyasa_degeri": 47250000000.0
+        },
+        {
+            "code": "GRTRK",
+            "kapanis": 108.0,
+            "gunluk_getiri": 0.09,
+            "gunluk_hacim": 132802609,
+            "piyasa_degeri": 13500000000.0
+        },
+        {
+            "code": "GSDDE",
+            "kapanis": 8.8,
+            "gunluk_getiri": 4.51,
+            "gunluk_hacim": 142580292,
+            "piyasa_degeri": 1320000000.0
+        },
+        {
+            "code": "GSDHO",
+            "kapanis": 4.31,
+            "gunluk_getiri": 1.65,
+            "gunluk_hacim": 188853129,
+            "piyasa_degeri": 4310000000.0
+        },
+        {
+            "code": "GSRAY",
+            "kapanis": 1.94,
+            "gunluk_getiri": 1.04,
+            "gunluk_hacim": 121609592,
+            "piyasa_degeri": 10476000000.0
+        },
+        {
+            "code": "GUBRF",
+            "kapanis": 265.5,
+            "gunluk_getiri": 2.91,
+            "gunluk_hacim": 902013815,
+            "piyasa_degeri": 88677000000.0
+        },
+        {
+            "code": "GUNDG",
+            "kapanis": 56.5,
+            "gunluk_getiri": -1.31,
+            "gunluk_hacim": 127081142,
+            "piyasa_degeri": 2203500000.0
+        },
+        {
+            "code": "GWIND",
+            "kapanis": 25.58,
+            "gunluk_getiri": 0.24,
+            "gunluk_hacim": 48444462,
+            "piyasa_degeri": 13813200000.0
+        },
+        {
+            "code": "GZNMI",
+            "kapanis": 115.8,
+            "gunluk_getiri": 7.12,
+            "gunluk_hacim": 75664954,
+            "piyasa_degeri": 7527000000.0
+        },
+        {
+            "code": "HALKB",
+            "kapanis": 20.12,
+            "gunluk_getiri": 3.44,
+            "gunluk_hacim": 1116309834,
+            "piyasa_degeri": 144557734184.92
+        },
+        {
+            "code": "HATEK",
+            "kapanis": 29.06,
+            "gunluk_getiri": 4.61,
+            "gunluk_hacim": 43251985,
+            "piyasa_degeri": 1830780000.0
+        },
+        {
+            "code": "HATSN",
+            "kapanis": 38.26,
+            "gunluk_getiri": 1.22,
+            "gunluk_hacim": 23275556,
+            "piyasa_degeri": 8474590000.0
+        },
+        {
+            "code": "HDFGS",
+            "kapanis": 1.75,
+            "gunluk_getiri": 2.94,
+            "gunluk_hacim": 110174844,
+            "piyasa_degeri": 988750000.0
+        },
+        {
+            "code": "HEDEF",
+            "kapanis": 8.17,
+            "gunluk_getiri": 9.96,
+            "gunluk_hacim": 174365764,
+            "piyasa_degeri": 15318750000.0
+        },
+        {
+            "code": "HEKTS",
+            "kapanis": 3.16,
+            "gunluk_getiri": 1.61,
+            "gunluk_hacim": 270225588,
+            "piyasa_degeri": 26638800000.0
+        },
+        {
+            "code": "HKTM",
+            "kapanis": 11.94,
+            "gunluk_getiri": 0.84,
+            "gunluk_hacim": 28929092,
+            "piyasa_degeri": 1253700000.0
+        },
+        {
+            "code": "HLGYO",
+            "kapanis": 2.62,
+            "gunluk_getiri": 2.34,
+            "gunluk_hacim": 194155091,
+            "piyasa_degeri": 9641600000.0
+        },
+        {
+            "code": "HOROZ",
+            "kapanis": 52.5,
+            "gunluk_getiri": 4.69,
+            "gunluk_hacim": 124046254,
+            "piyasa_degeri": 4750624410.0
+        },
+        {
+            "code": "HRKET",
+            "kapanis": 58.55,
+            "gunluk_getiri": 1.21,
+            "gunluk_hacim": 106040608,
+            "piyasa_degeri": 6744960000.0
+        },
+        {
+            "code": "HTTBT",
+            "kapanis": 46.0,
+            "gunluk_getiri": -2.75,
+            "gunluk_hacim": 99606618,
+            "piyasa_degeri": 13800000000.0
+        },
+        {
+            "code": "HUBVC",
+            "kapanis": 1.8,
+            "gunluk_getiri": 0.56,
+            "gunluk_hacim": 6965221,
+            "piyasa_degeri": 504000000.0
+        },
+        {
+            "code": "HUNER",
+            "kapanis": 4.18,
+            "gunluk_getiri": 1.46,
+            "gunluk_hacim": 304406369,
+            "piyasa_degeri": 4179999999.9999995
+        },
+        {
+            "code": "HURGZ",
+            "kapanis": 4.2,
+            "gunluk_getiri": 1.45,
+            "gunluk_hacim": 10107573,
+            "piyasa_degeri": 2486400000.0
+        },
+        {
+            "code": "ICBCT",
+            "kapanis": 12.69,
+            "gunluk_getiri": 1.28,
+            "gunluk_hacim": 16205285,
+            "piyasa_degeri": 10913400000.0
+        },
+        {
+            "code": "ICUGS",
+            "kapanis": 12.49,
+            "gunluk_getiri": 4.17,
+            "gunluk_hacim": 187029167,
+            "piyasa_degeri": 868055000.0
+        },
+        {
+            "code": "IDGYO",
+            "kapanis": 2.57,
+            "gunluk_getiri": -1.91,
+            "gunluk_hacim": 4314065,
+            "piyasa_degeri": 385500000.0
+        },
+        {
+            "code": "IEYHO",
+            "kapanis": 10.18,
+            "gunluk_getiri": -1.17,
+            "gunluk_hacim": 195793231,
+            "piyasa_degeri": 5533804561.94
+        },
+        {
+            "code": "IHAAS",
+            "kapanis": 20.4,
+            "gunluk_getiri": -0.97,
+            "gunluk_hacim": 23501561,
+            "piyasa_degeri": 3325200000.0
+        },
+        {
+            "code": "IHEVA",
+            "kapanis": 2.24,
+            "gunluk_getiri": 1.36,
+            "gunluk_hacim": 5487533,
+            "piyasa_degeri": 785120000.0000001
+        },
+        {
+            "code": "IHGZT",
+            "kapanis": 1.41,
+            "gunluk_getiri": 0.71,
+            "gunluk_hacim": 34510337,
+            "piyasa_degeri": 1128000000.0
+        },
+        {
+            "code": "IHLAS",
+            "kapanis": 2.31,
+            "gunluk_getiri": 1.32,
+            "gunluk_hacim": 156540793,
+            "piyasa_degeri": 3465000000.0
+        },
+        {
+            "code": "IHLGM",
+            "kapanis": 1.61,
+            "gunluk_getiri": 1.26,
+            "gunluk_hacim": 41244667,
+            "piyasa_degeri": 1610000000.0
+        },
+        {
+            "code": "IHYAY",
+            "kapanis": 2.24,
+            "gunluk_getiri": 0.9,
+            "gunluk_hacim": 16433523,
+            "piyasa_degeri": 1008000000.0000001
+        },
+        {
+            "code": "IMASM",
+            "kapanis": 2.57,
+            "gunluk_getiri": 1.98,
+            "gunluk_hacim": 45566484,
+            "piyasa_degeri": 2377250000.0
+        },
+        {
+            "code": "INDES",
+            "kapanis": 7.1,
+            "gunluk_getiri": 1.14,
+            "gunluk_hacim": 34025904,
+            "piyasa_degeri": 5325000000.0
+        },
+        {
+            "code": "INFO",
+            "kapanis": 2.17,
+            "gunluk_getiri": 4.33,
+            "gunluk_hacim": 12052150,
+            "piyasa_degeri": 2083929120.0
+        },
+        {
+            "code": "INGRM",
+            "kapanis": 403.75,
+            "gunluk_getiri": 2.15,
+            "gunluk_hacim": 14503808,
+            "piyasa_degeri": 9690000000.0
+        },
+        {
+            "code": "INTEK",
+            "kapanis": 458.25,
+            "gunluk_getiri": -0.11,
+            "gunluk_hacim": 5570610,
+            "piyasa_degeri": 3666000000.0
+        },
+        {
+            "code": "INTEM",
+            "kapanis": 200.0,
+            "gunluk_getiri": 1.73,
+            "gunluk_hacim": 10585101,
+            "piyasa_degeri": 3888000000.0
+        },
+        {
+            "code": "INVEO",
+            "kapanis": 6.4,
+            "gunluk_getiri": 2.4,
+            "gunluk_hacim": 12281905,
+            "piyasa_degeri": 6400000000.0
+        },
+        {
+            "code": "INVES",
+            "kapanis": 214.0,
+            "gunluk_getiri": 1.52,
+            "gunluk_hacim": 17638293,
+            "piyasa_degeri": 40125000000.0
+        },
+        {
+            "code": "IPEKE",
+            "kapanis": 59.2,
+            "gunluk_getiri": 0.34,
+            "gunluk_hacim": 271223194,
+            "piyasa_degeri": 15379305211.2
+        },
+        {
+            "code": "ISATR",
+            "kapanis": 5500000.0,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 0,
+            "piyasa_degeri": 137500000000000000
+        },
+        {
+            "code": "ISBIR",
+            "kapanis": 84.8,
+            "gunluk_getiri": 6.0,
+            "gunluk_hacim": 6859188,
+            "piyasa_degeri": 2746420992.0
+        },
+        {
+            "code": "ISBTR",
+            "kapanis": 515000.0,
+            "gunluk_getiri": -1.9,
+            "gunluk_hacim": 6695005,
+            "piyasa_degeri": 12875000000000000
+        },
+        {
+            "code": "ISCTR",
+            "kapanis": 11.97,
+            "gunluk_getiri": -0.17,
+            "gunluk_hacim": 4212191878,
+            "piyasa_degeri": 299250000000.0
+        },
+        {
+            "code": "ISDMR",
+            "kapanis": 35.28,
+            "gunluk_getiri": 1.09,
+            "gunluk_hacim": 71919091,
+            "piyasa_degeri": 102312000000.0
+        },
+        {
+            "code": "ISFIN",
+            "kapanis": 13.75,
+            "gunluk_getiri": 5.77,
+            "gunluk_hacim": 131127561,
+            "piyasa_degeri": 9560411368.75
+        },
+        {
+            "code": "ISGSY",
+            "kapanis": 34.0,
+            "gunluk_getiri": 4.68,
+            "gunluk_hacim": 59382606,
+            "piyasa_degeri": 2538184320.0
+        },
+        {
+            "code": "ISGYO",
+            "kapanis": 16.27,
+            "gunluk_getiri": 1.5,
+            "gunluk_hacim": 90088895,
+            "piyasa_degeri": 15598862500.0
+        },
+        {
+            "code": "ISKPL",
+            "kapanis": 23.1,
+            "gunluk_getiri": 0.79,
+            "gunluk_hacim": 22595271,
+            "piyasa_degeri": 4918416541.5
+        },
+        {
+            "code": "ISKUR",
+            "kapanis": 4900000.0,
+            "gunluk_getiri": -9.26,
+            "gunluk_hacim": 4900000,
+            "piyasa_degeri": 122500000000000000
+        },
+        {
+            "code": "ISMEN",
+            "kapanis": 40.06,
+            "gunluk_getiri": 3.67,
+            "gunluk_hacim": 347886284,
+            "piyasa_degeri": 60090000000.0
+        },
+        {
+            "code": "ISSEN",
+            "kapanis": 8.06,
+            "gunluk_getiri": 0.25,
+            "gunluk_hacim": 6951780,
+            "piyasa_degeri": 3420647726.86
+        },
+        {
+            "code": "ISYAT",
+            "kapanis": 9.14,
+            "gunluk_getiri": 9.99,
+            "gunluk_hacim": 95191704,
+            "piyasa_degeri": 1467877455.76
+        },
+        {
+            "code": "IZENR",
+            "kapanis": 5.57,
+            "gunluk_getiri": 2.96,
+            "gunluk_hacim": 52853227,
+            "piyasa_degeri": 13611687500.0
+        },
+        {
+            "code": "IZFAS",
+            "kapanis": 77.25,
+            "gunluk_getiri": 2.79,
+            "gunluk_hacim": 131115275,
+            "piyasa_degeri": 4562578125.0
+        },
+        {
+            "code": "IZINV",
+            "kapanis": 41.72,
+            "gunluk_getiri": 9.96,
+            "gunluk_hacim": 7905934,
+            "piyasa_degeri": 730619664.3199999
+        },
+        {
+            "code": "IZMDC",
+            "kapanis": 4.73,
+            "gunluk_getiri": 1.07,
+            "gunluk_hacim": 32083200,
+            "piyasa_degeri": 7095000000.000001
+        },
+        {
+            "code": "JANTS",
+            "kapanis": 23.48,
+            "gunluk_getiri": -0.68,
+            "gunluk_hacim": 82162021,
+            "piyasa_degeri": 16436000000.0
+        },
+        {
+            "code": "KAPLM",
+            "kapanis": 175.0,
+            "gunluk_getiri": 0.29,
+            "gunluk_hacim": 20395037,
+            "piyasa_degeri": 3500000000.0
+        },
+        {
+            "code": "KAREL",
+            "kapanis": 8.78,
+            "gunluk_getiri": 1.86,
+            "gunluk_hacim": 33663493,
+            "piyasa_degeri": 7075674953.4
+        },
+        {
+            "code": "KARSN",
+            "kapanis": 11.1,
+            "gunluk_getiri": 2.02,
+            "gunluk_hacim": 140986546,
+            "piyasa_degeri": 9990000000.0
+        },
+        {
+            "code": "KARTN",
+            "kapanis": 85.7,
+            "gunluk_getiri": 3.69,
+            "gunluk_hacim": 26343414,
+            "piyasa_degeri": 6427500000.0
+        },
+        {
+            "code": "KARYE",
+            "kapanis": 27.24,
+            "gunluk_getiri": 0.29,
+            "gunluk_hacim": 47727590,
+            "piyasa_degeri": 1498200000.0
+        },
+        {
+            "code": "KATMR",
+            "kapanis": 2.4,
+            "gunluk_getiri": 7.62,
+            "gunluk_hacim": 443938618,
+            "piyasa_degeri": 2583900000.0
+        },
+        {
+            "code": "KAYSE",
+            "kapanis": 17.72,
+            "gunluk_getiri": 2.25,
+            "gunluk_hacim": 23499020,
+            "piyasa_degeri": 12510320000.0
+        },
+        {
+            "code": "KBORU",
+            "kapanis": 64.2,
+            "gunluk_getiri": 2.23,
+            "gunluk_hacim": 42637264,
+            "piyasa_degeri": 6420000000.0
+        },
+        {
+            "code": "KCAER",
+            "kapanis": 12.08,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 90914133,
+            "piyasa_degeri": 23133200000.0
+        },
+        {
+            "code": "KCHOL",
+            "kapanis": 160.0,
+            "gunluk_getiri": 1.01,
+            "gunluk_hacim": 2836460488,
+            "piyasa_degeri": 405743688000.0
+        },
+        {
+            "code": "KENT",
+            "kapanis": 840.0,
+            "gunluk_getiri": 3.96,
+            "gunluk_hacim": 5421172,
+            "piyasa_degeri": 184800000000.0
+        },
+        {
+            "code": "KERVN",
+            "kapanis": 2.03,
+            "gunluk_getiri": 1.0,
+            "gunluk_hacim": 1048352,
+            "piyasa_degeri": 1194665312.3999999
+        },
+        {
+            "code": "KERVT",
+            "kapanis": 16.45,
+            "gunluk_getiri": -1.5,
+            "gunluk_hacim": 82384590,
+            "piyasa_degeri": 10889900000.0
+        },
+        {
+            "code": "KFEIN",
+            "kapanis": 127.6,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 95175972,
+            "piyasa_degeri": 2520100000.0
+        },
+        {
+            "code": "KGYO",
+            "kapanis": 3.1,
+            "gunluk_getiri": -0.32,
+            "gunluk_hacim": 22102751,
+            "piyasa_degeri": 3100000000.0
+        },
+        {
+            "code": "KIMMR",
+            "kapanis": 8.55,
+            "gunluk_getiri": 1.79,
+            "gunluk_hacim": 33313971,
+            "piyasa_degeri": 2052000000.0000002
+        },
+        {
+            "code": "KLGYO",
+            "kapanis": 4.91,
+            "gunluk_getiri": 1.45,
+            "gunluk_hacim": 45070443,
+            "piyasa_degeri": 6849450000.0
+        },
+        {
+            "code": "KLKIM",
+            "kapanis": 33.5,
+            "gunluk_getiri": 4.82,
+            "gunluk_hacim": 146362297,
+            "piyasa_degeri": 15410000000.0
+        },
+        {
+            "code": "KLMSN",
+            "kapanis": 22.82,
+            "gunluk_getiri": 0.97,
+            "gunluk_hacim": 10305513,
+            "piyasa_degeri": 1807344000.0
+        },
+        {
+            "code": "KLNMA",
+            "kapanis": 7.25,
+            "gunluk_getiri": 0.97,
+            "gunluk_hacim": 1743712,
+            "piyasa_degeri": 72500000000.0
+        },
+        {
+            "code": "KLRHO",
+            "kapanis": 27.04,
+            "gunluk_getiri": 2.42,
+            "gunluk_hacim": 80173787,
+            "piyasa_degeri": 43940000000.0
+        },
+        {
+            "code": "KLSER",
+            "kapanis": 29.7,
+            "gunluk_getiri": 1.3,
+            "gunluk_hacim": 53751695,
+            "piyasa_degeri": 15288926202.0
+        },
+        {
+            "code": "KLSYN",
+            "kapanis": 5.78,
+            "gunluk_getiri": 3.03,
+            "gunluk_hacim": 29294675,
+            "piyasa_degeri": 2493606536.48
+        },
+        {
+            "code": "KLYPV",
+            "kapanis": 62.2,
+            "gunluk_getiri": -3.12,
+            "gunluk_hacim": 274677962,
+            "piyasa_degeri": 25591631319.600002
+        },
+        {
+            "code": "KMPUR",
+            "kapanis": 17.54,
+            "gunluk_getiri": 3.18,
+            "gunluk_hacim": 28903334,
+            "piyasa_degeri": 8527948000.0
+        },
+        {
+            "code": "KNFRT",
+            "kapanis": 10.85,
+            "gunluk_getiri": 4.63,
+            "gunluk_hacim": 34339941,
+            "piyasa_degeri": 2864400000.0
+        },
+        {
+            "code": "KOCMT",
+            "kapanis": 12.59,
+            "gunluk_getiri": 1.61,
+            "gunluk_hacim": 26800915,
+            "piyasa_degeri": 5728450000.0
+        },
+        {
+            "code": "KONKA",
+            "kapanis": 34.0,
+            "gunluk_getiri": 2.72,
+            "gunluk_hacim": 12453231,
+            "piyasa_degeri": 4420000000.0
+        },
+        {
+            "code": "KONTR",
+            "kapanis": 28.78,
+            "gunluk_getiri": 2.2,
+            "gunluk_hacim": 594311692,
+            "piyasa_degeri": 18707000000.0
+        },
+        {
+            "code": "KONYA",
+            "kapanis": 5477.5,
+            "gunluk_getiri": 1.34,
+            "gunluk_hacim": 49272563,
+            "piyasa_degeri": 26694267600.0
+        },
+        {
+            "code": "KOPOL",
+            "kapanis": 5.06,
+            "gunluk_getiri": 2.43,
+            "gunluk_hacim": 61807688,
+            "piyasa_degeri": 6562617599.999999
+        },
+        {
+            "code": "KORDS",
+            "kapanis": 58.55,
+            "gunluk_getiri": 0.09,
+            "gunluk_hacim": 79646195,
+            "piyasa_degeri": 11389677399.8
+        },
+        {
+            "code": "KOTON",
+            "kapanis": 15.4,
+            "gunluk_getiri": -1.66,
+            "gunluk_hacim": 64950539,
+            "piyasa_degeri": 12776610000.0
+        },
+        {
+            "code": "KOZAA",
+            "kapanis": 79.3,
+            "gunluk_getiri": -0.63,
+            "gunluk_hacim": 347980398,
+            "piyasa_degeri": 30774744000.0
+        },
+        {
+            "code": "KOZAL",
+            "kapanis": 28.1,
+            "gunluk_getiri": -2.16,
+            "gunluk_hacim": 1757319037,
+            "piyasa_degeri": 89990250000.0
+        },
+        {
+            "code": "KRDMA",
+            "kapanis": 32.16,
+            "gunluk_getiri": 0.19,
+            "gunluk_hacim": 182558961,
+            "piyasa_degeri": 36662399999.99999
+        },
+        {
+            "code": "KRDMB",
+            "kapanis": 22.24,
+            "gunluk_getiri": 0.63,
+            "gunluk_hacim": 13447937,
+            "piyasa_degeri": 25353600000.0
+        },
+        {
+            "code": "KRDMD",
+            "kapanis": 26.14,
+            "gunluk_getiri": 2.03,
+            "gunluk_hacim": 1551677706,
+            "piyasa_degeri": 29799600000.0
+        },
+        {
+            "code": "KRGYO",
+            "kapanis": 11.98,
+            "gunluk_getiri": -4.62,
+            "gunluk_hacim": 137673913,
+            "piyasa_degeri": 3953400000.0
+        },
+        {
+            "code": "KRONT",
+            "kapanis": 16.04,
+            "gunluk_getiri": 0.25,
+            "gunluk_hacim": 7293977,
+            "piyasa_degeri": 1373201691.12
+        },
+        {
+            "code": "KRPLS",
+            "kapanis": 6.71,
+            "gunluk_getiri": 1.51,
+            "gunluk_hacim": 4120954,
+            "piyasa_degeri": 1171566000.0
+        },
+        {
+            "code": "KRSTL",
+            "kapanis": 6.73,
+            "gunluk_getiri": 3.38,
+            "gunluk_hacim": 92602871,
+            "piyasa_degeri": 1292160000.0
+        },
+        {
+            "code": "KRTEK",
+            "kapanis": 24.58,
+            "gunluk_getiri": 2.33,
+            "gunluk_hacim": 11628509,
+            "piyasa_degeri": 862770240.8399999
+        },
+        {
+            "code": "KRVGD",
+            "kapanis": 2.15,
+            "gunluk_getiri": 6.44,
+            "gunluk_hacim": 67015194,
+            "piyasa_degeri": 4644000000.0
+        },
+        {
+            "code": "KSTUR",
+            "kapanis": 5402.5,
+            "gunluk_getiri": -5.96,
+            "gunluk_hacim": 20536918,
+            "piyasa_degeri": 22931375865.0
+        },
+        {
+            "code": "KTLEV",
+            "kapanis": 70.3,
+            "gunluk_getiri": 0.43,
+            "gunluk_hacim": 507539794,
+            "piyasa_degeri": 12654000000.0
+        },
+        {
+            "code": "KTSKR",
+            "kapanis": 64.45,
+            "gunluk_getiri": 2.46,
+            "gunluk_hacim": 15136054,
+            "piyasa_degeri": 2964700000.0
+        },
+        {
+            "code": "KUTPO",
+            "kapanis": 78.0,
+            "gunluk_getiri": 3.59,
+            "gunluk_hacim": 28126650,
+            "piyasa_degeri": 3113510400.0
+        },
+        {
+            "code": "KUVVA",
+            "kapanis": 57.65,
+            "gunluk_getiri": 2.95,
+            "gunluk_hacim": 4509474,
+            "piyasa_degeri": 1789571703.55
+        },
+        {
+            "code": "KUYAS",
+            "kapanis": 34.42,
+            "gunluk_getiri": -8.02,
+            "gunluk_hacim": 705310328,
+            "piyasa_degeri": 13768000000.0
+        },
+        {
+            "code": "KZBGY",
+            "kapanis": 7.12,
+            "gunluk_getiri": -0.84,
+            "gunluk_hacim": 94374257,
+            "piyasa_degeri": 8544000000.0
+        },
+        {
+            "code": "KZGYO",
+            "kapanis": 20.44,
+            "gunluk_getiri": 0.49,
+            "gunluk_hacim": 22343317,
+            "piyasa_degeri": 4088000000.0000005
+        },
+        {
+            "code": "LIDER",
+            "kapanis": 192.0,
+            "gunluk_getiri": 2.4,
+            "gunluk_hacim": 166255627,
+            "piyasa_degeri": 31680000000.0
+        },
+        {
+            "code": "LIDFA",
+            "kapanis": 2.88,
+            "gunluk_getiri": 4.35,
+            "gunluk_hacim": 22790877,
+            "piyasa_degeri": 1608076800.0
+        },
+        {
+            "code": "LILAK",
+            "kapanis": 25.66,
+            "gunluk_getiri": 1.91,
+            "gunluk_hacim": 105563643,
+            "piyasa_degeri": 15139400000.0
+        },
+        {
+            "code": "LINK",
+            "kapanis": 550.0,
+            "gunluk_getiri": -2.83,
+            "gunluk_hacim": 315943423,
+            "piyasa_degeri": 11962566000.0
+        },
+        {
+            "code": "LKMNH",
+            "kapanis": 18.3,
+            "gunluk_getiri": 1.72,
+            "gunluk_hacim": 28867746,
+            "piyasa_degeri": 3952800000.0
+        },
+        {
+            "code": "LMKDC",
+            "kapanis": 31.6,
+            "gunluk_getiri": 2.4,
+            "gunluk_hacim": 143868323,
+            "piyasa_degeri": 16311278520.0
+        },
+        {
+            "code": "LOGO",
+            "kapanis": 116.4,
+            "gunluk_getiri": 1.22,
+            "gunluk_hacim": 41197108,
+            "piyasa_degeri": 11058000000.0
+        },
+        {
+            "code": "LRSHO",
+            "kapanis": 2.46,
+            "gunluk_getiri": 9.82,
+            "gunluk_hacim": 126686886,
+            "piyasa_degeri": 1889280000.0
+        },
+        {
+            "code": "LUKSK",
+            "kapanis": 82.75,
+            "gunluk_getiri": 1.04,
+            "gunluk_hacim": 12459151,
+            "piyasa_degeri": 2317000000.0
+        },
+        {
+            "code": "LYDHO",
+            "kapanis": 83.9,
+            "gunluk_getiri": 0.84,
+            "gunluk_hacim": 46834053,
+            "piyasa_degeri": 17451200000.0
+        },
+        {
+            "code": "LYDYE",
+            "kapanis": 13335.0,
+            "gunluk_getiri": 6.0,
+            "gunluk_hacim": 28700373,
+            "piyasa_degeri": 25217405115.0
+        },
+        {
+            "code": "MAALT",
+            "kapanis": 738.5,
+            "gunluk_getiri": 0.48,
+            "gunluk_hacim": 28392550,
+            "piyasa_degeri": 5145196703.5
+        },
+        {
+            "code": "MACKO",
+            "kapanis": 134.1,
+            "gunluk_getiri": 6.34,
+            "gunluk_hacim": 57960477,
+            "piyasa_degeri": 3352500000.0
+        },
+        {
+            "code": "MAGEN",
+            "kapanis": 30.0,
+            "gunluk_getiri": 1.97,
+            "gunluk_hacim": 119158090,
+            "piyasa_degeri": 35400000000.0
+        },
+        {
+            "code": "MAKIM",
+            "kapanis": 16.89,
+            "gunluk_getiri": 2.67,
+            "gunluk_hacim": 16489999,
+            "piyasa_degeri": 1891680000.0
+        },
+        {
+            "code": "MAKTK",
+            "kapanis": 11.88,
+            "gunluk_getiri": -6.75,
+            "gunluk_hacim": 311213304,
+            "piyasa_degeri": 2376000000.0
+        },
+        {
+            "code": "MANAS",
+            "kapanis": 11.2,
+            "gunluk_getiri": 2.28,
+            "gunluk_hacim": 74433018,
+            "piyasa_degeri": 1853913600.0
+        },
+        {
+            "code": "MARBL",
+            "kapanis": 11.74,
+            "gunluk_getiri": 1.21,
+            "gunluk_hacim": 23889068,
+            "piyasa_degeri": 2683764000.0
+        },
+        {
+            "code": "MARKA",
+            "kapanis": 61.1,
+            "gunluk_getiri": -0.65,
+            "gunluk_hacim": 54911004,
+            "piyasa_degeri": 1282489000.0
+        },
+        {
+            "code": "MARTI",
+            "kapanis": 2.97,
+            "gunluk_getiri": -0.67,
+            "gunluk_hacim": 36078843,
+            "piyasa_degeri": 1782000000.0
+        },
+        {
+            "code": "MAVI",
+            "kapanis": 68.6,
+            "gunluk_getiri": 1.33,
+            "gunluk_hacim": 486099883,
+            "piyasa_degeri": 27251761599.999996
+        },
+        {
+            "code": "MEDTR",
+            "kapanis": 33.04,
+            "gunluk_getiri": -0.48,
+            "gunluk_hacim": 27113139,
+            "piyasa_degeri": 3931760000.0
+        },
+        {
+            "code": "MEGAP",
+            "kapanis": 3.1,
+            "gunluk_getiri": 4.03,
+            "gunluk_hacim": 4241186,
+            "piyasa_degeri": 852500000.0
+        },
+        {
+            "code": "MEGMT",
+            "kapanis": 31.0,
+            "gunluk_getiri": -1.34,
+            "gunluk_hacim": 117540128,
+            "piyasa_degeri": 8215000000.0
+        },
+        {
+            "code": "MEKAG",
+            "kapanis": 43.54,
+            "gunluk_getiri": -0.05,
+            "gunluk_hacim": 68310571,
+            "piyasa_degeri": 2721250000.0
+        },
+        {
+            "code": "MEPET",
+            "kapanis": 8.74,
+            "gunluk_getiri": -1.13,
+            "gunluk_hacim": 756657,
+            "piyasa_degeri": 658559000.0
+        },
+        {
+            "code": "MERCN",
+            "kapanis": 23.58,
+            "gunluk_getiri": 6.7,
+            "gunluk_hacim": 101586754,
+            "piyasa_degeri": 4488946906.679999
+        },
+        {
+            "code": "MERIT",
+            "kapanis": 12.7,
+            "gunluk_getiri": 3.25,
+            "gunluk_hacim": 21715947,
+            "piyasa_degeri": 4274819999.9999995
+        },
+        {
+            "code": "MERKO",
+            "kapanis": 13.6,
+            "gunluk_getiri": -0.58,
+            "gunluk_hacim": 32527866,
+            "piyasa_degeri": 1375308323.2
+        },
+        {
+            "code": "METRO",
+            "kapanis": 2.49,
+            "gunluk_getiri": 2.89,
+            "gunluk_hacim": 17456383,
+            "piyasa_degeri": 1344600000.0
+        },
+        {
+            "code": "METUR",
+            "kapanis": 15.31,
+            "gunluk_getiri": 0.72,
+            "gunluk_hacim": 80934856,
+            "piyasa_degeri": 1653480000.0
+        },
+        {
+            "code": "MGROS",
+            "kapanis": 485.5,
+            "gunluk_getiri": 0.94,
+            "gunluk_hacim": 935424047,
+            "piyasa_degeri": 87901830121.5
+        },
+        {
+            "code": "MHRGY",
+            "kapanis": 4.81,
+            "gunluk_getiri": 0.42,
+            "gunluk_hacim": 11014941,
+            "piyasa_degeri": 3977869999.9999995
+        },
+        {
+            "code": "MIATK",
+            "kapanis": 42.02,
+            "gunluk_getiri": -1.64,
+            "gunluk_hacim": 767296961,
+            "piyasa_degeri": 20757880000.0
+        },
+        {
+            "code": "MMCAS",
+            "kapanis": 27.0,
+            "gunluk_getiri": 5.14,
+            "gunluk_hacim": 5148423,
+            "piyasa_degeri": 360095733.0
+        },
+        {
+            "code": "MNDRS",
+            "kapanis": 9.58,
+            "gunluk_getiri": 2.46,
+            "gunluk_hacim": 21003489,
+            "piyasa_degeri": 2656462878.08
+        },
+        {
+            "code": "MNDTR",
+            "kapanis": 5.37,
+            "gunluk_getiri": 0.56,
+            "gunluk_hacim": 4478956,
+            "piyasa_degeri": 5633349122.85
+        },
+        {
+            "code": "MOBTL",
+            "kapanis": 3.79,
+            "gunluk_getiri": 1.88,
+            "gunluk_hacim": 14069591,
+            "piyasa_degeri": 3884750000.0
+        },
+        {
+            "code": "MOGAN",
+            "kapanis": 8.72,
+            "gunluk_getiri": 0.81,
+            "gunluk_hacim": 46488145,
+            "piyasa_degeri": 21277741760.0
+        },
+        {
+            "code": "MOPAS",
+            "kapanis": 27.02,
+            "gunluk_getiri": 9.93,
+            "gunluk_hacim": 220982204,
+            "piyasa_degeri": 7376460000.0
+        },
+        {
+            "code": "MPARK",
+            "kapanis": 319.5,
+            "gunluk_getiri": 0.47,
+            "gunluk_hacim": 97571069,
+            "piyasa_degeri": 61028398539.0
+        },
+        {
+            "code": "MRGYO",
+            "kapanis": 1.42,
+            "gunluk_getiri": 2.9,
+            "gunluk_hacim": 106729057,
+            "piyasa_degeri": 1549191600.0
+        },
+        {
+            "code": "MRSHL",
+            "kapanis": 1408.0,
+            "gunluk_getiri": 0.64,
+            "gunluk_hacim": 30317937,
+            "piyasa_degeri": 15479740672.0
+        },
+        {
+            "code": "MSGYO",
+            "kapanis": 4.29,
+            "gunluk_getiri": 5.15,
+            "gunluk_hacim": 17092518,
+            "piyasa_degeri": 2015305226.22
+        },
+        {
+            "code": "MTRKS",
+            "kapanis": 23.58,
+            "gunluk_getiri": -1.59,
+            "gunluk_hacim": 25030999,
+            "piyasa_degeri": 2369790000.0
+        },
+        {
+            "code": "MTRYO",
+            "kapanis": 6.63,
+            "gunluk_getiri": 1.53,
+            "gunluk_hacim": 2464000,
+            "piyasa_degeri": 278460000.0
+        },
+        {
+            "code": "MZHLD",
+            "kapanis": 6.44,
+            "gunluk_getiri": 9.9,
+            "gunluk_hacim": 11243887,
+            "piyasa_degeri": 699119960.0
+        },
+        {
+            "code": "NATEN",
+            "kapanis": 46.98,
+            "gunluk_getiri": -1.01,
+            "gunluk_hacim": 263702558,
+            "piyasa_degeri": 7751699999.999999
+        },
+        {
+            "code": "NETAS",
+            "kapanis": 53.0,
+            "gunluk_getiri": 2.12,
+            "gunluk_hacim": 23714046,
+            "piyasa_degeri": 3437834400.0
+        },
+        {
+            "code": "NIBAS",
+            "kapanis": 14.62,
+            "gunluk_getiri": 3.1,
+            "gunluk_hacim": 15468266,
+            "piyasa_degeri": 789480000.0
+        },
+        {
+            "code": "NTGAZ",
+            "kapanis": 8.3,
+            "gunluk_getiri": 3.23,
+            "gunluk_hacim": 70664000,
+            "piyasa_degeri": 5727000000.000001
+        },
+        {
+            "code": "NTHOL",
+            "kapanis": 39.24,
+            "gunluk_getiri": 3.26,
+            "gunluk_hacim": 91747135,
+            "piyasa_degeri": 19620000000.0
+        },
+        {
+            "code": "NUGYO",
+            "kapanis": 6.84,
+            "gunluk_getiri": 3.48,
+            "gunluk_hacim": 12460781,
+            "piyasa_degeri": 2293780320.0
+        },
+        {
+            "code": "NUHCM",
+            "kapanis": 259.5,
+            "gunluk_getiri": 2.37,
+            "gunluk_hacim": 75277484,
+            "piyasa_degeri": 38980429200.0
+        },
+        {
+            "code": "OBAMS",
+            "kapanis": 49.9,
+            "gunluk_getiri": -0.7,
+            "gunluk_hacim": 122644854,
+            "piyasa_degeri": 23923145774.1
+        },
+        {
+            "code": "OBASE",
+            "kapanis": 30.2,
+            "gunluk_getiri": -1.56,
+            "gunluk_hacim": 16886351,
+            "piyasa_degeri": 1374100000.0
+        },
+        {
+            "code": "ODAS",
+            "kapanis": 4.95,
+            "gunluk_getiri": 1.43,
+            "gunluk_hacim": 206838045,
+            "piyasa_degeri": 6930000000.0
+        },
+        {
+            "code": "ODINE",
+            "kapanis": 119.0,
+            "gunluk_getiri": -1.41,
+            "gunluk_hacim": 235756412,
+            "piyasa_degeri": 13149500000.0
+        },
+        {
+            "code": "OFSYM",
+            "kapanis": 39.12,
+            "gunluk_getiri": 3.66,
+            "gunluk_hacim": 17866790,
+            "piyasa_degeri": 5721300000.0
+        },
+        {
+            "code": "ONCSM",
+            "kapanis": 92.0,
+            "gunluk_getiri": 1.83,
+            "gunluk_hacim": 18406176,
+            "piyasa_degeri": 2194200000.0
+        },
+        {
+            "code": "ONRYT",
+            "kapanis": 60.45,
+            "gunluk_getiri": 1.85,
+            "gunluk_hacim": 67664396,
+            "piyasa_degeri": 3798073500.0
+        },
+        {
+            "code": "ORCAY",
+            "kapanis": 10.9,
+            "gunluk_getiri": 4.31,
+            "gunluk_hacim": 35786043,
+            "piyasa_degeri": 872000000.0
+        },
+        {
+            "code": "ORGE",
+            "kapanis": 96.4,
+            "gunluk_getiri": 3.6,
+            "gunluk_hacim": 149598236,
+            "piyasa_degeri": 7712000000.0
+        },
+        {
+            "code": "ORMA",
+            "kapanis": 175.1,
+            "gunluk_getiri": 1.04,
+            "gunluk_hacim": 1739826,
+            "piyasa_degeri": 4762720000.0
+        },
+        {
+            "code": "OSMEN",
+            "kapanis": 8.88,
+            "gunluk_getiri": 1.83,
+            "gunluk_hacim": 17231643,
+            "piyasa_degeri": 3552000000.0000005
+        },
+        {
+            "code": "OSTIM",
+            "kapanis": 3.64,
+            "gunluk_getiri": 3.12,
+            "gunluk_hacim": 84240292,
+            "piyasa_degeri": 2147600000.0
+        },
+        {
+            "code": "OTKAR",
+            "kapanis": 470.0,
+            "gunluk_getiri": -0.63,
+            "gunluk_hacim": 100017488,
+            "piyasa_degeri": 56400000000.0
+        },
+        {
+            "code": "OTTO",
+            "kapanis": 339.0,
+            "gunluk_getiri": 0.82,
+            "gunluk_hacim": 13322025,
+            "piyasa_degeri": 2588421279.0
+        },
+        {
+            "code": "OYAKC",
+            "kapanis": 28.26,
+            "gunluk_getiri": 1.58,
+            "gunluk_hacim": 519241592,
+            "piyasa_degeri": 137390392427.58
+        },
+        {
+            "code": "OYAYO",
+            "kapanis": 29.66,
+            "gunluk_getiri": 0.54,
+            "gunluk_hacim": 13738537,
+            "piyasa_degeri": 593200000.0
+        },
+        {
+            "code": "OYLUM",
+            "kapanis": 7.4,
+            "gunluk_getiri": -2.25,
+            "gunluk_hacim": 9040662,
+            "piyasa_degeri": 629000000.0
+        },
+        {
+            "code": "OYYAT",
+            "kapanis": 27.16,
+            "gunluk_getiri": 1.72,
+            "gunluk_hacim": 6729543,
+            "piyasa_degeri": 8148000000.0
+        },
+        {
+            "code": "OZATD",
+            "kapanis": 127.0,
+            "gunluk_getiri": -0.24,
+            "gunluk_hacim": 201194250,
+            "piyasa_degeri": 9061450000.0
+        },
+        {
+            "code": "OZGYO",
+            "kapanis": 5.11,
+            "gunluk_getiri": 3.23,
+            "gunluk_hacim": 11457672,
+            "piyasa_degeri": 1277500000.0
+        },
+        {
+            "code": "OZKGY",
+            "kapanis": 11.2,
+            "gunluk_getiri": -1.23,
+            "gunluk_hacim": 51774910,
+            "piyasa_degeri": 16307199999.999998
+        },
+        {
+            "code": "OZRDN",
+            "kapanis": 8.78,
+            "gunluk_getiri": 0.34,
+            "gunluk_hacim": 3586274,
+            "piyasa_degeri": 645330000.0
+        },
+        {
+            "code": "OZSUB",
+            "kapanis": 36.38,
+            "gunluk_getiri": 9.98,
+            "gunluk_hacim": 53226763,
+            "piyasa_degeri": 2182800000.0
+        },
+        {
+            "code": "OZYSR",
+            "kapanis": 22.6,
+            "gunluk_getiri": 0.36,
+            "gunluk_hacim": 26381489,
+            "piyasa_degeri": 2332320000.0
+        },
+        {
+            "code": "PAGYO",
+            "kapanis": 63.2,
+            "gunluk_getiri": 1.04,
+            "gunluk_hacim": 14499211,
+            "piyasa_degeri": 5498400000.0
+        },
+        {
+            "code": "PAMEL",
+            "kapanis": 83.0,
+            "gunluk_getiri": 1.47,
+            "gunluk_hacim": 8041236,
+            "piyasa_degeri": 2580912473.0
+        },
+        {
+            "code": "PAPIL",
+            "kapanis": 36.5,
+            "gunluk_getiri": -3.18,
+            "gunluk_hacim": 290983831,
+            "piyasa_degeri": 7528125000.0
+        },
+        {
+            "code": "PARSN",
+            "kapanis": 79.15,
+            "gunluk_getiri": 0.96,
+            "gunluk_hacim": 15101156,
+            "piyasa_degeri": 6103414800.0
+        },
+        {
+            "code": "PASEU",
+            "kapanis": 41.0,
+            "gunluk_getiri": 0.29,
+            "gunluk_hacim": 208272612,
+            "piyasa_degeri": 27552000000.0
+        },
+        {
+            "code": "PATEK",
+            "kapanis": 71.1,
+            "gunluk_getiri": -1.18,
+            "gunluk_hacim": 270616588,
+            "piyasa_degeri": 9527400000.0
+        },
+        {
+            "code": "PCILT",
+            "kapanis": 11.96,
+            "gunluk_getiri": 0.67,
+            "gunluk_hacim": 24009997,
+            "piyasa_degeri": 1415466000.0
+        },
+        {
+            "code": "PEHOL",
+            "kapanis": 17.28,
+            "gunluk_getiri": 0.99,
+            "gunluk_hacim": 873184660,
+            "piyasa_degeri": 17244057600.0
+        },
+        {
+            "code": "PEKGY",
+            "kapanis": 1.48,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 248696080,
+            "piyasa_degeri": 3700000000.0
+        },
+        {
+            "code": "PENGD",
+            "kapanis": 7.31,
+            "gunluk_getiri": 1.39,
+            "gunluk_hacim": 36424541,
+            "piyasa_degeri": 1279250000.0
+        },
+        {
+            "code": "PENTA",
+            "kapanis": 13.56,
+            "gunluk_getiri": 2.11,
+            "gunluk_hacim": 22810679,
+            "piyasa_degeri": 5336076960.0
+        },
+        {
+            "code": "PETKM",
+            "kapanis": 16.59,
+            "gunluk_getiri": 0.91,
+            "gunluk_hacim": 495911290,
+            "piyasa_degeri": 42045696000.0
+        },
+        {
+            "code": "PETUN",
+            "kapanis": 8.6,
+            "gunluk_getiri": 2.63,
+            "gunluk_hacim": 16909146,
+            "piyasa_degeri": 2608767000.0
+        },
+        {
+            "code": "PGSUS",
+            "kapanis": 264.75,
+            "gunluk_getiri": 1.83,
+            "gunluk_hacim": 2154156475,
+            "piyasa_degeri": 132375000000.0
+        },
+        {
+            "code": "PINSU",
+            "kapanis": 5.75,
+            "gunluk_getiri": 1.41,
+            "gunluk_hacim": 8870407,
+            "piyasa_degeri": 1634656718.75
+        },
+        {
+            "code": "PKART",
+            "kapanis": 59.75,
+            "gunluk_getiri": 0.17,
+            "gunluk_hacim": 14548670,
+            "piyasa_degeri": 1359312500.0
+        },
+        {
+            "code": "PKENT",
+            "kapanis": 207.0,
+            "gunluk_getiri": 2.99,
+            "gunluk_hacim": 38477490,
+            "piyasa_degeri": 5150822400.0
+        },
+        {
+            "code": "PLTUR",
+            "kapanis": 26.4,
+            "gunluk_getiri": -1.49,
+            "gunluk_hacim": 81752736,
+            "piyasa_degeri": 6461400000.0
+        },
+        {
+            "code": "PNLSN",
+            "kapanis": 39.36,
+            "gunluk_getiri": 2.39,
+            "gunluk_hacim": 14220896,
+            "piyasa_degeri": 2952000000.0
+        },
+        {
+            "code": "PNSUT",
+            "kapanis": 8.38,
+            "gunluk_getiri": 2.44,
+            "gunluk_hacim": 11350134,
+            "piyasa_degeri": 2636828660.0400004
+        },
+        {
+            "code": "POLHO",
+            "kapanis": 15.1,
+            "gunluk_getiri": -0.07,
+            "gunluk_hacim": 199790700,
+            "piyasa_degeri": 11453350000.0
+        },
+        {
+            "code": "POLTK",
+            "kapanis": 6235.0,
+            "gunluk_getiri": 0.28,
+            "gunluk_hacim": 11331315,
+            "piyasa_degeri": 23381250000.0
+        },
+        {
+            "code": "PRDGS",
+            "kapanis": 5.12,
+            "gunluk_getiri": 4.28,
+            "gunluk_hacim": 28350139,
+            "piyasa_degeri": 1003520000.0
+        },
+        {
+            "code": "PRKAB",
+            "kapanis": 26.12,
+            "gunluk_getiri": 0.93,
+            "gunluk_hacim": 8668373,
+            "piyasa_degeri": 5661082990.24
+        },
+        {
+            "code": "PRKME",
+            "kapanis": 17.7,
+            "gunluk_getiri": 2.49,
+            "gunluk_hacim": 10613846,
+            "piyasa_degeri": 2634950201.1
+        },
+        {
+            "code": "PRZMA",
+            "kapanis": 10.91,
+            "gunluk_getiri": 6.13,
+            "gunluk_hacim": 13277843,
+            "piyasa_degeri": 785520000.0
+        },
+        {
+            "code": "PSDTC",
+            "kapanis": 72.9,
+            "gunluk_getiri": 2.1,
+            "gunluk_hacim": 8827609,
+            "piyasa_degeri": 541282500.0
+        },
+        {
+            "code": "PSGYO",
+            "kapanis": 1.88,
+            "gunluk_getiri": 5.62,
+            "gunluk_hacim": 274028361,
+            "piyasa_degeri": 9024000000.0
+        },
+        {
+            "code": "QNBFB",
+            "kapanis": 288.0,
+            "gunluk_getiri": 1.41,
+            "gunluk_hacim": 1812687,
+            "piyasa_degeri": 964800000000.0
+        },
+        {
+            "code": "QNBFK",
+            "kapanis": 38.48,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 2680410,
+            "piyasa_degeri": 76960000000.0
+        },
+        {
+            "code": "QNBFL",
+            "kapanis": 90.6,
+            "gunluk_getiri": -0.93,
+            "gunluk_hacim": 1350949,
+            "piyasa_degeri": 90600000000.0
+        },
+        {
+            "code": "QNBTR",
+            "kapanis": 313.25,
+            "gunluk_getiri": -1.26,
+            "gunluk_hacim": 4002114,
+            "piyasa_degeri": 1049387500000.0
+        },
+        {
+            "code": "QUAGR",
+            "kapanis": 4.5,
+            "gunluk_getiri": 5.14,
+            "gunluk_hacim": 243038420,
+            "piyasa_degeri": 11880000000.0
+        },
+        {
+            "code": "RALYH",
+            "kapanis": 96.9,
+            "gunluk_getiri": 1.73,
+            "gunluk_hacim": 294366483,
+            "piyasa_degeri": 32267700000.0
+        },
+        {
+            "code": "RAYSG",
+            "kapanis": 261.0,
+            "gunluk_getiri": -0.38,
+            "gunluk_hacim": 274739569,
+            "piyasa_degeri": 42561232416.0
+        },
+        {
+            "code": "REEDR",
+            "kapanis": 12.24,
+            "gunluk_getiri": 2.43,
+            "gunluk_hacim": 458016098,
+            "piyasa_degeri": 11628000000.0
+        },
+        {
+            "code": "RGYAS",
+            "kapanis": 109.0,
+            "gunluk_getiri": -0.55,
+            "gunluk_hacim": 80378789,
+            "piyasa_degeri": 36079000000.0
+        },
+        {
+            "code": "RNPOL",
+            "kapanis": 26.1,
+            "gunluk_getiri": 4.57,
+            "gunluk_hacim": 7667459,
+            "piyasa_degeri": 783000000.0
+        },
+        {
+            "code": "RODRG",
+            "kapanis": 17.18,
+            "gunluk_getiri": 1.42,
+            "gunluk_hacim": 2115147,
+            "piyasa_degeri": 486881200.0
+        },
+        {
+            "code": "ROYAL",
+            "kapanis": 6.8,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 0,
+            "piyasa_degeri": 408000000.0
+        },
+        {
+            "code": "RTALB",
+            "kapanis": 2.77,
+            "gunluk_getiri": 2.21,
+            "gunluk_hacim": 56882100,
+            "piyasa_degeri": 1385000000.0
+        },
+        {
+            "code": "RUBNS",
+            "kapanis": 24.0,
+            "gunluk_getiri": 7.14,
+            "gunluk_hacim": 51630617,
+            "piyasa_degeri": 1788000000.0
+        },
+        {
+            "code": "RYGYO",
+            "kapanis": 14.46,
+            "gunluk_getiri": -0.07,
+            "gunluk_hacim": 132241637,
+            "piyasa_degeri": 28920000000.0
+        },
+        {
+            "code": "RYSAS",
+            "kapanis": 16.55,
+            "gunluk_getiri": -0.54,
+            "gunluk_hacim": 22840753,
+            "piyasa_degeri": 33100000000.0
+        },
+        {
+            "code": "SAFKR",
+            "kapanis": 75.25,
+            "gunluk_getiri": 0.6,
+            "gunluk_hacim": 31337627,
+            "piyasa_degeri": 2652562500.0
+        },
+        {
+            "code": "SAHOL",
+            "kapanis": 80.8,
+            "gunluk_getiri": 0.87,
+            "gunluk_hacim": 2139580934,
+            "piyasa_degeri": 169710378295.19998
+        },
+        {
+            "code": "SAMAT",
+            "kapanis": 18.68,
+            "gunluk_getiri": 7.42,
+            "gunluk_hacim": 98027894,
+            "piyasa_degeri": 683688000.0
+        },
+        {
+            "code": "SANEL",
+            "kapanis": 24.68,
+            "gunluk_getiri": 2.32,
+            "gunluk_hacim": 5850412,
+            "piyasa_degeri": 450541618.44
+        },
+        {
+            "code": "SANFM",
+            "kapanis": 48.0,
+            "gunluk_getiri": 4.58,
+            "gunluk_hacim": 103629986,
+            "piyasa_degeri": 7200000000.0
+        },
+        {
+            "code": "SANKO",
+            "kapanis": 20.02,
+            "gunluk_getiri": 3.09,
+            "gunluk_hacim": 6574946,
+            "piyasa_degeri": 3003000000.0
+        },
+        {
+            "code": "SARKY",
+            "kapanis": 18.82,
+            "gunluk_getiri": -0.16,
+            "gunluk_hacim": 26477235,
+            "piyasa_degeri": 11292000000.0
+        },
+        {
+            "code": "SASA",
+            "kapanis": 3.69,
+            "gunluk_getiri": 2.22,
+            "gunluk_hacim": 1180544784,
+            "piyasa_degeri": 161679620678.4
+        },
+        {
+            "code": "SAYAS",
+            "kapanis": 30.44,
+            "gunluk_getiri": 2.91,
+            "gunluk_hacim": 25737378,
+            "piyasa_degeri": 2351490000.0
+        },
+        {
+            "code": "SDTTR",
+            "kapanis": 196.6,
+            "gunluk_getiri": 3.26,
+            "gunluk_hacim": 142757037,
+            "piyasa_degeri": 11402800000.0
+        },
+        {
+            "code": "SEGMN",
+            "kapanis": 24.98,
+            "gunluk_getiri": 0.81,
+            "gunluk_hacim": 118075189,
+            "piyasa_degeri": 4471420000.0
+        },
+        {
+            "code": "SEGYO",
+            "kapanis": 5.25,
+            "gunluk_getiri": -0.94,
+            "gunluk_hacim": 60223179,
+            "piyasa_degeri": 4271165235.75
+        },
+        {
+            "code": "SEKFK",
+            "kapanis": 7.78,
+            "gunluk_getiri": 5.85,
+            "gunluk_hacim": 6186542,
+            "piyasa_degeri": 778000000.0
+        },
+        {
+            "code": "SEKUR",
+            "kapanis": 14.65,
+            "gunluk_getiri": -7.86,
+            "gunluk_hacim": 34573062,
+            "piyasa_degeri": 785413250.9
+        },
+        {
+            "code": "SELEC",
+            "kapanis": 64.7,
+            "gunluk_getiri": 1.89,
+            "gunluk_hacim": 53486277,
+            "piyasa_degeri": 40178700000.0
+        },
+        {
+            "code": "SELGD",
+            "kapanis": 49.3,
+            "gunluk_getiri": 4.36,
+            "gunluk_hacim": 4893370,
+            "piyasa_degeri": 1084600000.0
+        },
+        {
+            "code": "SELVA",
+            "kapanis": 1.76,
+            "gunluk_getiri": 3.53,
+            "gunluk_hacim": 21329188,
+            "piyasa_degeri": 823680000.0
+        },
+        {
+            "code": "SERNT",
+            "kapanis": 10.25,
+            "gunluk_getiri": 9.98,
+            "gunluk_hacim": 417213151,
+            "piyasa_degeri": 4233250000.0
+        },
+        {
+            "code": "SEYKM",
+            "kapanis": 3.34,
+            "gunluk_getiri": 0.6,
+            "gunluk_hacim": 12689060,
+            "piyasa_degeri": 668000000.0
+        },
+        {
+            "code": "SILVR",
+            "kapanis": 16.86,
+            "gunluk_getiri": 3.5,
+            "gunluk_hacim": 7625724,
+            "piyasa_degeri": 758700000.0
+        },
+        {
+            "code": "SISE",
+            "kapanis": 36.2,
+            "gunluk_getiri": 0.78,
+            "gunluk_hacim": 993115111,
+            "piyasa_degeri": 110888348827.20001
+        },
+        {
+            "code": "SKBNK",
+            "kapanis": 5.26,
+            "gunluk_getiri": -4.36,
+            "gunluk_hacim": 800051643,
+            "piyasa_degeri": 13150000000.0
+        },
+        {
+            "code": "SKTAS",
+            "kapanis": 5.63,
+            "gunluk_getiri": 0.36,
+            "gunluk_hacim": 112637713,
+            "piyasa_degeri": 1249860000.0
+        },
+        {
+            "code": "SKYLP",
+            "kapanis": 97.0,
+            "gunluk_getiri": 1.15,
+            "gunluk_hacim": 22486087,
+            "piyasa_degeri": 921500000.0
+        },
+        {
+            "code": "SKYMD",
+            "kapanis": 17.65,
+            "gunluk_getiri": 6.97,
+            "gunluk_hacim": 145423779,
+            "piyasa_degeri": 2735750000.0
+        },
+        {
+            "code": "SMART",
+            "kapanis": 27.94,
+            "gunluk_getiri": 4.25,
+            "gunluk_hacim": 48026503,
+            "piyasa_degeri": 890238250.0
+        },
+        {
+            "code": "SMRTG",
+            "kapanis": 32.38,
+            "gunluk_getiri": 2.53,
+            "gunluk_hacim": 55904613,
+            "piyasa_degeri": 19618394400.0
+        },
+        {
+            "code": "SMRVA",
+            "kapanis": 65.45,
+            "gunluk_getiri": 10.0,
+            "gunluk_hacim": 933598493,
+            "piyasa_degeri": 7723100000.0
+        },
+        {
+            "code": "SNGYO",
+            "kapanis": 3.5,
+            "gunluk_getiri": 0.86,
+            "gunluk_hacim": 172090222,
+            "piyasa_degeri": 14000000000.0
+        },
+        {
+            "code": "SNICA",
+            "kapanis": 3.96,
+            "gunluk_getiri": 2.06,
+            "gunluk_hacim": 27717854,
+            "piyasa_degeri": 2376000000.0
+        },
+        {
+            "code": "SNKRN",
+            "kapanis": 147.3,
+            "gunluk_getiri": 0.89,
+            "gunluk_hacim": 11603612,
+            "piyasa_degeri": 1156188043.8000002
+        },
+        {
+            "code": "SNPAM",
+            "kapanis": 62.0,
+            "gunluk_getiri": 1.64,
+            "gunluk_hacim": 2258284,
+            "piyasa_degeri": 8060000000.0
+        },
+        {
+            "code": "SODSN",
+            "kapanis": 93.65,
+            "gunluk_getiri": -1.42,
+            "gunluk_hacim": 1517078,
+            "piyasa_degeri": 1404750000.0
+        },
+        {
+            "code": "SOKE",
+            "kapanis": 11.11,
+            "gunluk_getiri": 1.55,
+            "gunluk_hacim": 16389909,
+            "piyasa_degeri": 4294015000.0
+        },
+        {
+            "code": "SOKM",
+            "kapanis": 37.12,
+            "gunluk_getiri": 4.04,
+            "gunluk_hacim": 518831009,
+            "piyasa_degeri": 22022925096.96
+        },
+        {
+            "code": "SONME",
+            "kapanis": 117.7,
+            "gunluk_getiri": 0.94,
+            "gunluk_hacim": 14115307,
+            "piyasa_degeri": 8709800000.0
+        },
+        {
+            "code": "SRVGY",
+            "kapanis": 3.18,
+            "gunluk_getiri": -0.93,
+            "gunluk_hacim": 75822370,
+            "piyasa_degeri": 10335000000.0
+        },
+        {
+            "code": "SUMAS",
+            "kapanis": 344.0,
+            "gunluk_getiri": -3.1,
+            "gunluk_hacim": 2450605,
+            "piyasa_degeri": 2141193600.0
+        },
+        {
+            "code": "SUNTK",
+            "kapanis": 35.2,
+            "gunluk_getiri": -3.46,
+            "gunluk_hacim": 36059596,
+            "piyasa_degeri": 16705920000.000002
+        },
+        {
+            "code": "SURGY",
+            "kapanis": 41.04,
+            "gunluk_getiri": -0.97,
+            "gunluk_hacim": 65198934,
+            "piyasa_degeri": 6874200000.0
+        },
+        {
+            "code": "SUWEN",
+            "kapanis": 20.0,
+            "gunluk_getiri": -0.3,
+            "gunluk_hacim": 25585550,
+            "piyasa_degeri": 4480000000.0
+        },
+        {
+            "code": "TABGD",
+            "kapanis": 164.2,
+            "gunluk_getiri": -1.68,
+            "gunluk_hacim": 129059306,
+            "piyasa_degeri": 42904146400.0
+        },
+        {
+            "code": "TARKM",
+            "kapanis": 338.5,
+            "gunluk_getiri": 1.8,
+            "gunluk_hacim": 58242546,
+            "piyasa_degeri": 7108500000.0
+        },
+        {
+            "code": "TATEN",
+            "kapanis": 37.38,
+            "gunluk_getiri": 3.49,
+            "gunluk_hacim": 61110148,
+            "piyasa_degeri": 10485090000.0
+        },
+        {
+            "code": "TATGD",
+            "kapanis": 12.01,
+            "gunluk_getiri": 1.87,
+            "gunluk_hacim": 13101256,
+            "piyasa_degeri": 2940048000.0
+        },
+        {
+            "code": "TAVHL",
+            "kapanis": 241.5,
+            "gunluk_getiri": -0.04,
+            "gunluk_hacim": 703146436,
+            "piyasa_degeri": 87732421875.0
+        },
+        {
+            "code": "TBORG",
+            "kapanis": 171.5,
+            "gunluk_getiri": 1.48,
+            "gunluk_hacim": 9156325,
+            "piyasa_degeri": 55310165389.5
+        },
+        {
+            "code": "TCELL",
+            "kapanis": 90.65,
+            "gunluk_getiri": 2.49,
+            "gunluk_hacim": 2143857249,
+            "piyasa_degeri": 199430000000.0
+        },
+        {
+            "code": "TCKRC",
+            "kapanis": 39.2,
+            "gunluk_getiri": 3.7,
+            "gunluk_hacim": 98649099,
+            "piyasa_degeri": 6664000000.000001
+        },
+        {
+            "code": "TDGYO",
+            "kapanis": 15.4,
+            "gunluk_getiri": -3.69,
+            "gunluk_hacim": 25051799,
+            "piyasa_degeri": 1062600000.0
+        },
+        {
+            "code": "TEKTU",
+            "kapanis": 3.95,
+            "gunluk_getiri": 2.33,
+            "gunluk_hacim": 15090227,
+            "piyasa_degeri": 1185000000.0
+        },
+        {
+            "code": "TERA",
+            "kapanis": 58.05,
+            "gunluk_getiri": 2.74,
+            "gunluk_hacim": 358614602,
+            "piyasa_degeri": 9142875000.0
+        },
+        {
+            "code": "TETMT",
+            "kapanis": 9600.0,
+            "gunluk_getiri": -4.53,
+            "gunluk_hacim": 13156618,
+            "piyasa_degeri": 18154262400.0
+        },
+        {
+            "code": "TEZOL",
+            "kapanis": 17.34,
+            "gunluk_getiri": 4.65,
+            "gunluk_hacim": 125748736,
+            "piyasa_degeri": 8670000000.0
+        },
+        {
+            "code": "TGSAS",
+            "kapanis": 57.45,
+            "gunluk_getiri": 1.14,
+            "gunluk_hacim": 6268418,
+            "piyasa_degeri": 861750000.0
+        },
+        {
+            "code": "THYAO",
+            "kapanis": 308.25,
+            "gunluk_getiri": -0.56,
+            "gunluk_hacim": 8783106583,
+            "piyasa_degeri": 425385000000.0
+        },
+        {
+            "code": "TKFEN",
+            "kapanis": 143.0,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 4235747783,
+            "piyasa_degeri": 52910000000.0
+        },
+        {
+            "code": "TKNSA",
+            "kapanis": 26.9,
+            "gunluk_getiri": 0.3,
+            "gunluk_hacim": 104071215,
+            "piyasa_degeri": 5406900000.0
+        },
+        {
+            "code": "TLMAN",
+            "kapanis": 89.75,
+            "gunluk_getiri": 2.45,
+            "gunluk_hacim": 15635296,
+            "piyasa_degeri": 1884750000.0
+        },
+        {
+            "code": "TMPOL",
+            "kapanis": 73.3,
+            "gunluk_getiri": 4.05,
+            "gunluk_hacim": 15510986,
+            "piyasa_degeri": 1039027500.0
+        },
+        {
+            "code": "TMSN",
+            "kapanis": 94.3,
+            "gunluk_getiri": -0.42,
+            "gunluk_hacim": 82572591,
+            "piyasa_degeri": 10844500000.0
+        },
+        {
+            "code": "TNZTP",
+            "kapanis": 36.96,
+            "gunluk_getiri": 7.13,
+            "gunluk_hacim": 40020379,
+            "piyasa_degeri": 8075726625.12
+        },
+        {
+            "code": "TOASO",
+            "kapanis": 164.3,
+            "gunluk_getiri": 1.42,
+            "gunluk_hacim": 1043854643,
+            "piyasa_degeri": 82150000000.0
+        },
+        {
+            "code": "TRCAS",
+            "kapanis": 31.88,
+            "gunluk_getiri": -0.56,
+            "gunluk_hacim": 46936851,
+            "piyasa_degeri": 8148528000.0
+        },
+        {
+            "code": "TRGYO",
+            "kapanis": 59.1,
+            "gunluk_getiri": -0.51,
+            "gunluk_hacim": 88748235,
+            "piyasa_degeri": 59100000000.0
+        },
+        {
+            "code": "TRILC",
+            "kapanis": 23.3,
+            "gunluk_getiri": 3.56,
+            "gunluk_hacim": 196978249,
+            "piyasa_degeri": 3770056500.0
+        },
+        {
+            "code": "TSGYO",
+            "kapanis": 7.2,
+            "gunluk_getiri": 0.98,
+            "gunluk_hacim": 37867641,
+            "piyasa_degeri": 4680000000.0
+        },
+        {
+            "code": "TSKB",
+            "kapanis": 10.75,
+            "gunluk_getiri": 2.28,
+            "gunluk_hacim": 471490083,
+            "piyasa_degeri": 30100000000.0
+        },
+        {
+            "code": "TSPOR",
+            "kapanis": 1.05,
+            "gunluk_getiri": 2.94,
+            "gunluk_hacim": 186863418,
+            "piyasa_degeri": 7875000000.0
+        },
+        {
+            "code": "TTKOM",
+            "kapanis": 52.45,
+            "gunluk_getiri": 6.61,
+            "gunluk_hacim": 1462786810,
+            "piyasa_degeri": 183575000000.0
+        },
+        {
+            "code": "TTRAK",
+            "kapanis": 738.0,
+            "gunluk_getiri": -2.32,
+            "gunluk_hacim": 311473164,
+            "piyasa_degeri": 73849353750.0
+        },
+        {
+            "code": "TUCLK",
+            "kapanis": 8.1,
+            "gunluk_getiri": 3.58,
+            "gunluk_hacim": 43836759,
+            "piyasa_degeri": 1458000000.0
+        },
+        {
+            "code": "TUKAS",
+            "kapanis": 2.08,
+            "gunluk_getiri": 2.46,
+            "gunluk_hacim": 119542688,
+            "piyasa_degeri": 9360000000.0
+        },
+        {
+            "code": "TUPRS",
+            "kapanis": 129.5,
+            "gunluk_getiri": -2.78,
+            "gunluk_hacim": 2384901306,
+            "piyasa_degeri": 249520029941.0
+        },
+        {
+            "code": "TUREX",
+            "kapanis": 29.8,
+            "gunluk_getiri": 3.47,
+            "gunluk_hacim": 546993152,
+            "piyasa_degeri": 32184000000.0
+        },
+        {
+            "code": "TURGG",
+            "kapanis": 454.75,
+            "gunluk_getiri": 3.59,
+            "gunluk_hacim": 7779777,
+            "piyasa_degeri": 3238136051.25
+        },
+        {
+            "code": "TURSG",
+            "kapanis": 17.51,
+            "gunluk_getiri": -0.17,
+            "gunluk_hacim": 177149498,
+            "piyasa_degeri": 87550000000.00002
+        },
+        {
+            "code": "UFUK",
+            "kapanis": 640.0,
+            "gunluk_getiri": 1.75,
+            "gunluk_hacim": 18610973,
+            "piyasa_degeri": 29982003840.0
+        },
+        {
+            "code": "ULAS",
+            "kapanis": 24.12,
+            "gunluk_getiri": 3.97,
+            "gunluk_hacim": 6128544,
+            "piyasa_degeri": 612218061.0
+        },
+        {
+            "code": "ULKER",
+            "kapanis": 113.6,
+            "gunluk_getiri": 2.43,
+            "gunluk_hacim": 940841792,
+            "piyasa_degeri": 41949737128.0
+        },
+        {
+            "code": "ULUFA",
+            "kapanis": 13.86,
+            "gunluk_getiri": 3.05,
+            "gunluk_hacim": 20265261,
+            "piyasa_degeri": 1850310000.0
+        },
+        {
+            "code": "ULUSE",
+            "kapanis": 133.8,
+            "gunluk_getiri": 1.75,
+            "gunluk_hacim": 7523443,
+            "piyasa_degeri": 10704000000.0
+        },
+        {
+            "code": "ULUUN",
+            "kapanis": 6.0,
+            "gunluk_getiri": 4.53,
+            "gunluk_hacim": 32268716,
+            "piyasa_degeri": 4500000000.0
+        },
+        {
+            "code": "UMPAS",
+            "kapanis": 9.3,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 0,
+            "piyasa_degeri": 390600000.00000006
+        },
+        {
+            "code": "UNLU",
+            "kapanis": 13.75,
+            "gunluk_getiri": 2.92,
+            "gunluk_hacim": 12663280,
+            "piyasa_degeri": 2416425000.0
+        },
+        {
+            "code": "USAK",
+            "kapanis": 4.64,
+            "gunluk_getiri": -3.33,
+            "gunluk_hacim": 393932645,
+            "piyasa_degeri": 5684000000.0
+        },
+        {
+            "code": "UZERB",
+            "kapanis": 698.0,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 6747643,
+            "piyasa_degeri": 5584000000.0
+        },
+        {
+            "code": "VAKBN",
+            "kapanis": 22.82,
+            "gunluk_getiri": 1.42,
+            "gunluk_hacim": 658800638,
+            "piyasa_degeri": 226281329132.04
+        },
+        {
+            "code": "VAKFN",
+            "kapanis": 2.56,
+            "gunluk_getiri": 9.87,
+            "gunluk_hacim": 332682914,
+            "piyasa_degeri": 8960000000.0
+        },
+        {
+            "code": "VAKKO",
+            "kapanis": 74.65,
+            "gunluk_getiri": 1.7,
+            "gunluk_hacim": 52682979,
+            "piyasa_degeri": 11944000000.0
+        },
+        {
+            "code": "VANGD",
+            "kapanis": 21.8,
+            "gunluk_getiri": 1.87,
+            "gunluk_hacim": 8474954,
+            "piyasa_degeri": 545000000.0
+        },
+        {
+            "code": "VBTYZ",
+            "kapanis": 19.0,
+            "gunluk_getiri": 2.32,
+            "gunluk_hacim": 26514973,
+            "piyasa_degeri": 2223000000.0
+        },
+        {
+            "code": "VERTU",
+            "kapanis": 31.18,
+            "gunluk_getiri": 1.7,
+            "gunluk_hacim": 9144275,
+            "piyasa_degeri": 1621360000.0
+        },
+        {
+            "code": "VERUS",
+            "kapanis": 259.75,
+            "gunluk_getiri": 9.92,
+            "gunluk_hacim": 23539511,
+            "piyasa_degeri": 18182500000.0
+        },
+        {
+            "code": "VESBE",
+            "kapanis": 13.42,
+            "gunluk_getiri": 6.68,
+            "gunluk_hacim": 216852242,
+            "piyasa_degeri": 21472000000.0
+        },
+        {
+            "code": "VESTL",
+            "kapanis": 48.3,
+            "gunluk_getiri": 1.0,
+            "gunluk_hacim": 561251947,
+            "piyasa_degeri": 16202538082.5
+        },
+        {
+            "code": "VKFYO",
+            "kapanis": 17.43,
+            "gunluk_getiri": 2.71,
+            "gunluk_hacim": 1652427,
+            "piyasa_degeri": 522900000.0
+        },
+        {
+            "code": "VKGYO",
+            "kapanis": 2.05,
+            "gunluk_getiri": 1.99,
+            "gunluk_hacim": 73492720,
+            "piyasa_degeri": 7072499999.999999
+        },
+        {
+            "code": "VKING",
+            "kapanis": 33.54,
+            "gunluk_getiri": 9.97,
+            "gunluk_hacim": 20815524,
+            "piyasa_degeri": 1408680000.0
+        },
+        {
+            "code": "VRGYO",
+            "kapanis": 2.38,
+            "gunluk_getiri": 2.15,
+            "gunluk_hacim": 61449932,
+            "piyasa_degeri": 1951600000.0
+        },
+        {
+            "code": "VSNMD",
+            "kapanis": 246.5,
+            "gunluk_getiri": 3.92,
+            "gunluk_hacim": 252637074,
+            "piyasa_degeri": 28840500000.0
+        },
+        {
+            "code": "YAPRK",
+            "kapanis": 488.75,
+            "gunluk_getiri": -0.86,
+            "gunluk_hacim": 611727995,
+            "piyasa_degeri": 6940250000.0
+        },
+        {
+            "code": "YATAS",
+            "kapanis": 25.62,
+            "gunluk_getiri": 2.48,
+            "gunluk_hacim": 22514227,
+            "piyasa_degeri": 3837848637.84
+        },
+        {
+            "code": "YAYLA",
+            "kapanis": 20.26,
+            "gunluk_getiri": 1.5,
+            "gunluk_hacim": 20872255,
+            "piyasa_degeri": 1010467500.0000001
+        },
+        {
+            "code": "YBTAS",
+            "kapanis": 208000.0,
+            "gunluk_getiri": 9.97,
+            "gunluk_hacim": 12474670,
+            "piyasa_degeri": 20800000000.0
+        },
+        {
+            "code": "YEOTK",
+            "kapanis": 50.25,
+            "gunluk_getiri": -0.89,
+            "gunluk_hacim": 253313965,
+            "piyasa_degeri": 17838750000.0
+        },
+        {
+            "code": "YESIL",
+            "kapanis": 1.48,
+            "gunluk_getiri": -0.67,
+            "gunluk_hacim": 40440232,
+            "piyasa_degeri": 954600000.0
+        },
+        {
+            "code": "YGGYO",
+            "kapanis": 79.95,
+            "gunluk_getiri": -1.3,
+            "gunluk_hacim": 31209978,
+            "piyasa_degeri": 19341504000.0
+        },
+        {
+            "code": "YGYO",
+            "kapanis": 6.61,
+            "gunluk_getiri": 0.0,
+            "gunluk_hacim": 6535743,
+            "piyasa_degeri": 1739863722.22
+        },
+        {
+            "code": "YIGIT",
+            "kapanis": 27.44,
+            "gunluk_getiri": 0.73,
+            "gunluk_hacim": 139785184,
+            "piyasa_degeri": 8245720000.0
+        },
+        {
+            "code": "YKBNK",
+            "kapanis": 24.22,
+            "gunluk_getiri": -1.14,
+            "gunluk_hacim": 6313397567,
+            "piyasa_degeri": 204587582098.47998
+        },
+        {
+            "code": "YKSLN",
+            "kapanis": 6.16,
+            "gunluk_getiri": -0.48,
+            "gunluk_hacim": 101800877,
+            "piyasa_degeri": 1540000000.0
+        },
+        {
+            "code": "YONGA",
+            "kapanis": 69.05,
+            "gunluk_getiri": 9.95,
+            "gunluk_hacim": 4731706,
+            "piyasa_degeri": 1160040000.0
+        },
+        {
+            "code": "YUNSA",
+            "kapanis": 6.11,
+            "gunluk_getiri": 1.5,
+            "gunluk_hacim": 27513723,
+            "piyasa_degeri": 2932800000.0
+        },
+        {
+            "code": "YYAPI",
+            "kapanis": 1.46,
+            "gunluk_getiri": 0.69,
+            "gunluk_hacim": 52030905,
+            "piyasa_degeri": 1244668657.34
+        },
+        {
+            "code": "YYLGD",
+            "kapanis": 9.35,
+            "gunluk_getiri": 3.89,
+            "gunluk_hacim": 39046609,
+            "piyasa_degeri": 10163263000.0
+        },
+        {
+            "code": "ZEDUR",
+            "kapanis": 7.5,
+            "gunluk_getiri": 3.88,
+            "gunluk_hacim": 10877112,
+            "piyasa_degeri": 1310625000.0
+        },
+        {
+            "code": "ZOREN",
+            "kapanis": 3.51,
+            "gunluk_getiri": 0.29,
+            "gunluk_hacim": 229388227,
+            "piyasa_degeri": 17550000000.0
+        },
+        {
+            "code": "ZRGYO",
+            "kapanis": 21.02,
+            "gunluk_getiri": 1.35,
+            "gunluk_hacim": 58629938,
+            "piyasa_degeri": 98659892400.0
+        }
+    ]
+}

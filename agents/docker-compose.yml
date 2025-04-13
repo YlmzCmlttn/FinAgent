@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  openai-agents:
+    build: .
+    container_name: openai-agents
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./sample_outputs:/app/sample_outputs
+    tty: true
+    stdin_open: true
