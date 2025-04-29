@@ -1,0 +1,29 @@
+services:
+  agent_backend:
+    build: ./agent_backend
+    environment:
+      - PORT=4000
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "4000:4000"    
+    volumes:
+      - ./agent_backend:/app
+    networks:
+      - fin-agent-network
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    environment:
+      - REACT_APP_API_URL=http://agent_backend:4000
+    networks:
+      - fin-agent-network
+    depends_on:
+      - agent_backend
+    restart: unless-stopped
+
+networks:
+  fin-agent-network:
+    driver: bridge
