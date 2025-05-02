@@ -1,0 +1,213 @@
+I'll provide example data and usage scenarios for each table in the schema. I'll show how the data would be structured and related.
+Company Table Example:
+
+companies = [
+    {
+        "company_id": 1,
+        "ticker": "KCHOL",
+        "name": "Koç Holding A.Ş."
+    },
+    {
+        "company_id": 2,
+        "ticker": "TUPRS",
+        "name": "Tüpraş"
+    }
+]
+
+Apply to create_datab...
+StatementType Table Example:
+
+statement_types = [
+    {
+        "statement_type_id": 1,
+        "code": "BS",
+        "description": "Balance Sheet"
+    },
+    {
+        "statement_type_id": 2,
+        "code": "IS_Q",
+        "description": "Income Statement (Quarterly)"
+    },
+    {
+        "statement_type_id": 3,
+        "code": "CF_A",
+        "description": "Cash Flow Statement (Annual)"
+    }
+]
+
+Apply to create_datab...
+Account Table Example (with hierarchical structure):
+
+accounts = [
+    # Balance Sheet Accounts
+    {
+        "account_id": 1,
+        "statement_type_id": 1,  # BS
+        "code": "TOTAL_ASSETS",
+        "name": "Total Assets",
+        "parent_id": None
+    },
+    {
+        "account_id": 2,
+        "statement_type_id": 1,  # BS
+        "code": "CURRENT_ASSETS",
+        "name": "Current Assets",
+        "parent_id": 1  # Child of Total Assets
+    },
+    {
+        "account_id": 3,
+        "statement_type_id": 1,  # BS
+        "code": "CASH",
+        "name": "Cash and Cash Equivalents",
+        "parent_id": 2  # Child of Current Assets
+    },
+    
+    # Income Statement Accounts
+    {
+        "account_id": 4,
+        "statement_type_id": 2,  # IS_Q
+        "code": "NET_INCOME",
+        "name": "Net Income",
+        "parent_id": None
+    },
+    {
+        "account_id": 5,
+        "statement_type_id": 2,  # IS_Q
+        "code": "REVENUE",
+        "name": "Revenue",
+        "parent_id": None
+    }
+]
+
+Apply to create_datab...
+Period Table Example:
+
+periods = [
+    {
+        "period_id": 1,
+        "statement_type_id": 1,  # BS
+        "period_end": "2023-12-31",
+        "frequency": "A"  # Annual
+    },
+    {
+        "period_id": 2,
+        "statement_type_id": 2,  # IS_Q
+        "period_end": "2024-03-31",
+        "frequency": "Q"  # Quarterly
+    },
+    {
+        "period_id": 3,
+        "statement_type_id": 2,  # IS_Q
+        "period_end": "2024-06-30",
+        "frequency": "Q"  # Quarterly
+    }
+]
+
+Apply to create_datab...
+FinancialFact Table Example:
+
+financial_facts = [
+    # Balance Sheet facts for KCHOL
+    {
+        "fact_id": 1,
+        "company_id": 1,  # KCHOL
+        "period_id": 1,   # 2023-12-31
+        "account_id": 1,  # TOTAL_ASSETS
+        "value": 1000000000.00,  # 1 billion
+        "currency": "TRY"
+    },
+    {
+        "fact_id": 2,
+        "company_id": 1,  # KCHOL
+        "period_id": 1,   # 2023-12-31
+        "account_id": 3,  # CASH
+        "value": 50000000.00,  # 50 million
+        "currency": "TRY"
+    },
+    
+    # Income Statement facts for KCHOL
+    {
+        "fact_id": 3,
+        "company_id": 1,  # KCHOL
+        "period_id": 2,   # 2024-Q1
+        "account_id": 4,  # NET_INCOME
+        "value": 25000000.00,  # 25 million
+        "currency": "TRY"
+    },
+    {
+        "fact_id": 4,
+        "company_id": 1,  # KCHOL
+        "period_id": 2,   # 2024-Q1
+        "account_id": 5,  # REVENUE
+        "value": 100000000.00,  # 100 million
+        "currency": "TRY"
+    }
+]
+
+Apply to create_datab...
+Example Queries (how to use the data):
+Get all financial statements for a company in a period:
+
+# Get KCHOL's Q1 2024 financial statements
+company_id = 1  # KCHOL
+period_id = 2   # 2024-Q1
+
+# This would return all financial facts for KCHOL in Q1 2024
+
+Apply to create_datab...
+Get hierarchical account values:
+
+# Get KCHOL's total assets breakdown for 2023
+company_id = 1  # KCHOL
+period_id = 1   # 2023-12-31
+account_id = 1  # TOTAL_ASSETS
+
+# This would return:
+# - Total Assets: 1,000,000,000 TRY
+#   - Current Assets: 500,000,000 TRY
+#     - Cash: 50,000,000 TRY
+
+Apply to create_datab...
+Compare companies:
+
+# Compare KCHOL and TUPRS's Q1 2024 net income
+period_id = 2  # 2024-Q1
+account_id = 4  # NET_INCOME
+
+# This would return:
+# - KCHOL: 25,000,000 TRY
+# - TUPRS: 15,000,000 TRY
+
+Apply to create_datab...
+Time series analysis:
+
+# Get KCHOL's quarterly net income for 2024
+company_id = 1  # KCHOL
+account_id = 4  # NET_INCOME
+
+# This would return:
+# - Q1 2024: 25,000,000 TRY
+# - Q2 2024: 30,000,000 TRY
+
+Apply to create_datab...
+Currency conversion:
+
+# Get KCHOL's total assets in USD
+
+company_id = 1  # KCHOL
+period_id = 1   # 2023-12-31
+account_id = 1  # TOTAL_ASSETS
+
+# This would return:
+# - Total Assets: 1,000,000,000 TRY (≈ 33,333,333 USD at 30 TRY/USD)
+
+Apply to create_datab...
+This schema allows for:
+Flexible financial statement storage
+Hierarchical account relationships
+Multiple currencies
+Different reporting frequencies (quarterly, annual)
+Easy comparison between companies and periods
+Time series analysis
+Currency conversion capabilities
+Would you like me to explain any specific aspect in more detail?
