@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: database_trial
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - database-trial-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  openai-agent-mcp:
+    build: .
+    container_name: openai-agent-mcp
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./sample_outputs:/app/sample_outputs
+      - ./data:/app/data
+    tty: true
+    stdin_open: true
+    
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - database-trial-network
+
+networks:
+  database-trial-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

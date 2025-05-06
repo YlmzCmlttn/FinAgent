@@ -663,6 +663,10 @@ def read_create_tables():
     for config in COMPANY_CONFIGS:
         process_company_data(config)
         time.sleep(1)
+    
+    logger.info("Running test queries to verify data...")
+    test_queries()
+    logger.info("✅ Test queries completed!")
 
 def main():
     """Main function to process all companies."""
