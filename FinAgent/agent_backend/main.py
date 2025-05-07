@@ -5,7 +5,7 @@ from typing import Optional
 import os
 from dotenv import load_dotenv
 from agents import Agent, Runner, gen_trace_id, trace, WebSearchTool
-
+from agent_wrapper import send_message
 # Load environment variables
 load_dotenv()
 
@@ -19,11 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# Initialize the agent
-agent = Agent(name="Assistant",
-        instructions="You are a helpful financial assistant",
-        tools=[WebSearchTool()])
 
 class ChatRequest(BaseModel):
     message: str
@@ -39,9 +34,9 @@ async def chat(request: ChatRequest):
         # Generate a new trace_id if not provided
         trace_id = request.trace_id or gen_trace_id()
 
-        result = await Runner.run(agent, request.message)
+        result = await send_message(request.message)
 
-        response = result.final_output
+        response = result
         # Process the message with the agent
         print(f"Received message: {request.message}")
         print(f"Response: {response}")
@@ -53,7 +48,7 @@ async def chat(request: ChatRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/health")
-async def health_check():
+async def health_check():    
     return {"status": "healthy"}
 
 if __name__ == "__main__":

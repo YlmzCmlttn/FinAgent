@@ -1,4 +1,22 @@
 services:
+  postgres:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: database_trial
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    networks:
+      - fin-agent-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
   agent_backend:
     build: ./agent_backend
     environment:
@@ -7,7 +25,10 @@ services:
     ports:
       - "4000:4000"    
     volumes:
-      - ./agent_backend:/app
+      - ./agent_backend:/app      
+    depends_on:
+      postgres:
+        condition: service_healthy
     networks:
       - fin-agent-network
     restart: unless-stopped
@@ -27,3 +48,6 @@ services:
 networks:
   fin-agent-network:
     driver: bridge
+
+volumes:
+  postgres_data:
