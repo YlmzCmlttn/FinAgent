@@ -5,10 +5,14 @@ CREATE EXTENSION IF NOT EXISTS vector;
 CREATE TABLE IF NOT EXISTS account (
   account_id   SERIAL PRIMARY KEY,
   code         TEXT   NOT NULL UNIQUE,
+  parent_account_id  INTEGER NULL REFERENCES account(account_id) ON DELETE CASCADE,
   name         TEXT   NOT NULL UNIQUE,
   description  TEXT   NOT NULL,
   embedding    vector(1536)
 );
+
+CREATE INDEX idx_account_parent 
+  ON account(parent_account_id);
 
 -- -- 3) Create a named IVFFlat index with 100 lists
 -- CREATE INDEX IF NOT EXISTS account_embedding_ivfflat_idx

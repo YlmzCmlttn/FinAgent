@@ -5,8 +5,10 @@ from typing import Optional
 import os
 from dotenv import load_dotenv
 from agents import Agent, Runner, gen_trace_id, trace, WebSearchTool
-from agent_wrapper import send_message
+from agent_wrapper import send_message, initialize_agent_global
+import asyncio
 # Load environment variables
+
 load_dotenv()
 
 app = FastAPI(title="FinAgent Backend", description="Backend for OpenAI Agents")
@@ -19,6 +21,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.on_event("startup")
+async def startup_event():
+    # Initialize agent during application startup
+    await initialize_agent_global()
 
 class ChatRequest(BaseModel):
     message: str

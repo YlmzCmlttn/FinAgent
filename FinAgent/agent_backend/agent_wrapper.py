@@ -5,8 +5,9 @@ import openai
 from dotenv import load_dotenv
 import numpy as np
 from openai import OpenAI
-from read_and_fill_facts import read_and_fill_facts
-from agents import Agent, Runner, gen_trace_id, trace, function_tool
+from read_and_fill_facts import read_and_fill_facts, insert_total_liabilities
+from create_hierarchy_map import update_parent_accounts
+from agents import Agent, Runner, gen_trace_id, trace, function_tool, ModelSettings
 from data import SAMPLE_ACCOUNTS, SAMPLE_COMPANIES
 # Load environment variables
 load_dotenv()
@@ -27,9 +28,9 @@ client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 os.makedirs(DATA_DIR, exist_ok=True)
 
-
 # --- EMBEDDING UTILS ---
 def get_embedding(text: str) -> list[float]:
+    #print(text)
     resp = client.embeddings.create(model='text-embedding-ada-002', input=text)
     return resp.data[0].embedding
 
@@ -168,7 +169,91 @@ def _search_hnsw(table: str,
             (vec_lit, limit)
         )
         return cur.fetchall()
+def search_accounts_with_children(
+    query: str,
+    ef_search: int = 200,
+    limit: int = 5
+) -> list[dict]:
+    """
+    1) Find up to `limit` accounts most similar to `query` via HNSW on embeddings.
+    2) For each matched account fetch all direct children.
+    Returns a list of dicts with keys:
+      - code, name, description, parent_code
+      - children: list of dicts with keys code, name, description, parent_code
+    """
+    # embed the query
+    vec = get_embedding(query)
+    vec_lit = "[" + ",".join(map(str, vec)) + "]"
 
+    with psycopg2.connect(**DB_PARAMS) as conn, \
+         conn.cursor(cursor_factory=RealDictCursor) as cur:
+
+        # set search effort
+        cur.execute("SET vector.hnsw.ef_search = %s;", (ef_search,))
+
+        # 1) fetch top-N matches, including parent code
+        cur.execute(
+            """
+            SELECT
+              a.account_id,
+              a.code,
+              a.name,
+              a.description,
+              p.code AS parent_code
+            FROM account a
+            LEFT JOIN account p
+              ON a.parent_account_id = p.account_id
+            ORDER BY a.embedding <=> %s::vector
+            LIMIT %s;
+            """,
+            (vec_lit, limit)
+        )
+        matches = cur.fetchall()
+        matched_ids = [r['account_id'] for r in matches]
+        if not matched_ids:
+            return []
+
+        # 2) fetch all direct children of those matches
+        cur.execute(
+            """
+            SELECT
+              a.account_id,
+              a.code,
+              a.name,
+              a.description,
+              p.code AS parent_code
+            FROM account a
+            LEFT JOIN account p
+              ON a.parent_account_id = p.account_id
+            WHERE a.parent_account_id = ANY(%s);
+            """,
+            (matched_ids,)
+        )
+        children = cur.fetchall()
+
+    # group children by their parent_code
+    children_by_parent: dict[str, list[dict]] = {}
+    for child in children:
+        parent_code = child['parent_code']
+        children_by_parent.setdefault(parent_code, []).append({
+            'code':         child['code'],
+            'name':         child['name'],
+            'description':  child['description'],
+            'parent_code':  child['parent_code']
+        })
+
+    # build final result, dropping numeric IDs
+    result: list[dict] = []
+    for acct in matches:
+        result.append({
+            'code':         acct['code'],
+            'name':         acct['name'],
+            'description':  acct['description'],
+            'parent_code':  acct['parent_code'],
+            'children':     children_by_parent.get(acct['code'], [])
+        })
+
+    return result
 @function_tool
 def get_similar_companies(company_name_prompt: str) -> list[dict]:
     """
@@ -178,22 +263,24 @@ def get_similar_companies(company_name_prompt: str) -> list[dict]:
     Args:
         company_name_prompt: Company name or ticker of the company to search for.
     Returns:
-        A list of similar companies with their company_id, ticker, name, and description.
+        A list of similar companies with their ticker, name, and description.
     """
-    return _search_hnsw(table="company", select_cols=["company_id", "ticker", "name", "description"], query=company_name_prompt, limit=5)
+    return _search_hnsw(table="company", select_cols=["ticker", "name", "description"], query=company_name_prompt, limit=5)
 
 @function_tool
 def get_similar_accounts(account_query_prompt: str) -> list[dict]:
     """
     Get similar accounts based on the given account query prompt. 
     It will query the account table with embedding vector search and return the top 5 results.
+    If the account is a parent account, it will also return the children accounts.
 
     Args:
         account_query_prompt: Account query prompt.
     Returns:
-        A list of similar accounts with their account_id, code, name, and description.
+        A list of similar accounts with their code, name, and description. If the account is a parent account, it will also return the children accounts.
     """
-    return _search_hnsw( table="account", select_cols=["account_id", "code", "name", "description"], query=account_query_prompt,limit=5)
+    return search_accounts_with_children(account_query_prompt)
+    #return _search_hnsw( table="account", select_cols=["account_id", "code", "name", "description"], query=account_query_prompt,limit=5)
 
 @function_tool
 def query_with_sql(sql_query: str) -> list[dict]:
@@ -215,18 +302,31 @@ def query_with_sql(sql_query: str) -> list[dict]:
     return results
 
 def initialize_agent():
+    global agent
+    if agent is not None:
+        return agent
+
+    # 1) Save embeddings for accounts & companies
+    #save_embeddings(SAMPLE_ACCOUNTS, 'code', 'account')
+    #save_embeddings(SAMPLE_COMPANIES, 'ticker', 'company')
+
+    # 2) Insert into DB
     insert_table(load_embeddings('account', 'code'), 'account', 'code', ['code', 'name', 'description', 'embedding'])
     insert_table(load_embeddings('company', 'ticker'), 'company', 'ticker', ['ticker', 'name', 'description', 'embedding'])
+
+    update_parent_accounts()
 
     fill_periods_table()
 
     read_and_fill_facts()
 
+    insert_total_liabilities()
+
     # 3) Create HNSW indexes
     create_hnsw('account')
     create_hnsw('company')
 
-    return Agent(
+    agent = Agent(
         name="Financial Statements Agent",
         instructions="You are a helpful professional financial analyst with expertise in financial statements and sql queries."
             "You will use the following tools to answer the user's question:"
@@ -234,23 +334,37 @@ def initialize_agent():
             "2. get_similar_accounts"
             "3. query_with_sql"
             "Before you use query_with_sql, If you need to get correct company or acounts table information, you can use get_similar_companies or get_similar_accounts tools."
+            "Account can have children accounts. Parent account is the total of all its children accounts. if you need to get the total of all accounts, you should use the parent account."
             "Database Structure:\n"
-            "account (account_id SERIAL PRIMARY KEY,code TEXT NOT NULL UNIQUE,name TEXT NOT NULL UNIQUE,description TEXT NOT NULL)\n"
+            "account (account_id SERIAL PRIMARY KEY,code TEXT NOT NULL UNIQUE, parent_account_id  INTEGER NULL REFERENCES account(account_id) ON DELETE CASCADE,name TEXT NOT NULL UNIQUE,description TEXT NOT NULL)\n"
             "company (company_id SERIAL PRIMARY KEY,ticker TEXT NOT NULL UNIQUE,name TEXT NOT NULL UNIQUE,description TEXT NOT NULL)\n"            
             "period ( period_id   SERIAL PRIMARY KEY, quarter INTEGER NOT NULL,year INTEGER NOT NULL, CONSTRAINT uq_period_year_quarter UNIQUE (year, quarter))\n"
             "financial_fact (fact_id SERIAL PRIMARY KEY, company_id INTEGER NOT NULL REFERENCES company(company_id) ON DELETE CASCADE,period_id INTEGER NOT NULL REFERENCES period(period_id) ON DELETE CASCADE, account_id INTEGER NOT NULLREFERENCES account(account_id) ON DELETE CASCADE, value NUMERIC(18,2) NOT NULL)\n"
-            "You you query the dabase if you need to get account and/or company information. You must use get_similar_companies or get_similar_accounts tools to get the correct company or account information.",
+            "You you query the dabase if you need to get account and/or company information. You must use get_similar_companies or get_similar_accounts tools to get the correct company or account information.\n"
+            "Some of the accounts are subcategories of other accounts. If you need to get the total of all accounts, you should use the parent account. If you need to get the subcategories of an account, you should use the account itself.\n"
+            "You don't need to sum up the values of the accounts. You can use the account itself to get the total value. If you need to get the total value of a category, you should use the parent account.\n"
+            "For example TOTAL_LIABILITIES is the sum of TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES. So if you need to get the total liabilities, you should use TOTAL_LIABILITIES not to sum up TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES.\n",
         model="gpt-4o-mini",
+        #model_settings=ModelSettings(temperature=0.2),
         tools=[get_similar_companies, get_similar_accounts, query_with_sql]
     )
+    print("Agent initialized")
+    #message="What is the total value of Koç Holding's Current Assets in the fourth quarter of 2024?"
+    #result = await Runner.run(agent, input=message)
+    #print("Agent response: ", result.final_output)
+    return agent
 
 # Initialize agent only when needed
 agent = None
 
-async def send_message(message: str):
+async def initialize_agent_global():
     global agent
     if agent is None:
         agent = initialize_agent()
+    return agent
+
+async def send_message(message: str):
+    await initialize_agent_global()
     result = await Runner.run(agent, input=message)
     return result.final_output
 

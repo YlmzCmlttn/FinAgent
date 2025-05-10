@@ -342,7 +342,7 @@ async def main():
             "Some of the accounts are subcategories of other accounts. If you need to get the total of all accounts, you should use the parent account. If you need to get the subcategories of an account, you should use the account itself.\n"
             "You don't need to sum up the values of the accounts. You can use the account itself to get the total value. If you need to get the total value of a category, you should use the parent account.\n"
             "For example TOTAL_LIABILITIES is the sum of TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES. So if you need to get the total liabilities, you should use TOTAL_LIABILITIES not to sum up TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES.\n",
-        model="o3-mini",
+        model="gpt-4o-mini",
         #model_settings=ModelSettings(temperature=0.2),
         tools=[get_similar_companies, get_similar_accounts, query_with_sql]
     )
