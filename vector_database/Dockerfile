@@ -36,4 +36,6 @@ ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 
 # Run the application
-CMD ["python", "main.py"] 
+#CMD ["python", "find_duplicate_lines.py", "account_names.txt"] 
+#CMD ["python", "update_excel_files.py"]
+CMD ["python", "main.py"]

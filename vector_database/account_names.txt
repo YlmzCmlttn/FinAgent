@@ -1,0 +1,108 @@
+Kalem
+Dönen Varlıklar
+    Nakit ve Nakit Benzerleri
+    Gayrimenkul Projeleri Kapsamında Açılan Nakit Hesapları
+    Finansal Yatırımlar
+    Teminata Verilen Finansal Varlıklar
+    Ticari Alacaklar
+    Finans Sektörü Faaliyetlerinden Alacaklar
+    Türkiye Cumhuriyet Merkez Bankası Hesabı
+    Diğer Alacaklar
+    Müşteri Sözleşmelerinden Doğan Varlıklar
+    İmtiyaz Sözleşmelerine İlişkin Finansal Varlıklar
+    Türev Araçlar
+    Stoklar
+    Proje Halindeki Stoklar
+    Canlı Varlıklar
+    Peşin Ödenmiş Giderler
+    Ertelenmiş Sigortacılık Üretim Giderleri
+    Cari Dönem Vergisiyle İlgili Varlıklar
+    Nakit Dışı Serbest Kullanılabilir Teminatlar
+    Diğer Dönen Varlıklar
+    Satış Amacıyla Elde Tutulan Duran Varlıklar
+    Ortaklara Dağıtılmak Üzere Elde Tutulan Duran Varlıklar
+    Toplam Dönen Varlıklar
+Duran Varlıklar
+    Finansal Yatırımlar
+    İştirakler, İş Ortaklıkları ve Bağlı Ortaklıklardaki Yatırımlar
+    Ticari Alacaklar
+    Finans Sektörü Faaliyetlerinden Alacaklar
+    Diğer Alacaklar
+    Müşteri Sözleşmelerinden Doğan Varlıklar
+    İmtiyaz Sözleşmelerine İlişkin Finansal Varlıklar
+    Türev Araçlar
+    Stoklar
+    Özkaynak Yöntemiyle Değerlenen Yatırımlar
+    Canlı Varlıklar
+    Yatırım Amaçlı Gayrimenkuller
+    Proje Halindeki Yatırım Amaçlı Gayrimenkuller
+    Maddi Duran Varlıklar
+    Kullanım Hakkı Varlıkları
+    Maddi Olmayan Duran Varlıklar
+    Peşin Ödenmiş Giderler
+    Ertelenmiş Vergi Varlığı
+    Cari Dönem Vergisiyle İlgili Duran Varlıklar
+    Nakit Dışı Serbest Kullanılabilir Teminatlar
+    Diğer Duran Varlıklar
+    Toplam Duran Varlıklar
+    Toplam Varlıklar
+Kısa Vadeli Yükümlülükler
+    Finansal Borçlar
+    Diğer Finansal Yükümlülükler
+    Ticari Borçlar
+    Finans Sektörü Faaliyetlerinden Borçlar
+    Çalışanlara Sağlanan Faydalar Kapsamında Borçlar
+    Diğer Borçlar
+    Müşteri Sözleşmelerinden Doğan Yükümlülükler
+    Özkaynak Yöntemiyle Değerlenen Yatırımlardan Yükümlülükler
+    Türev Araçlar
+    Devlet Teşvik ve Yardımları
+    Ertelenmiş Gelirler
+    Dönem Karı Vergi Yükümlülüğü
+    Kısa Vadeli Karşılıklar
+    Diğer Kısa Vadeli Yükümlülükler
+    Satış Amaçlı Sınıflandırılan Varlık Gruplarına İlişkin Yükümlülükler
+    Ortaklara Dağıtılmak Üzere Elde Tutulan Varlık Gruplarına İlişkin Yükümlülükler
+    Toplam Kısa Vadeli Yükümlülükler
+Uzun Vadeli Yükümlülükler
+    Finansal Borçlar
+    Diğer Finansal Yükümlülükler
+    Ticari Borçlar
+    Finans Sektörü Faaliyetlerinden Borçlar
+    Çalışanlara Sağlanan Faydalar Kapsamında Borçlar
+    Diğer Borçlar
+    Müşteri Sözleşmelerinden Doğan Yükümlülükler
+    Devlet Teşvik ve Yardımları
+    Özkaynak Yöntemiyle Değerlenen Yatırımlardan Yükümlülükler
+    Türev Araçlar
+    Devlet Teşvik ve Yardımları
+    Ertelenmiş Gelirler
+    Uzun vadeli Karşılıklar
+    Cari Dönem Vergisiyle İlgili Borçlar
+    Ertelenmiş Vergi Yükümlülüğü
+    Diğer Uzun Vadeli Yükümlülükler
+    Toplam Uzun Vadeli Yükümlülükler
+Özkaynaklar
+    Ana Ortaklığa Ait Özkaynaklar
+    Ödenmiş Sermaye
+    Sermaye Düzeltme Farkları
+    Birleşme Denkleştirme Hesabı
+    Pay Sahiplerinin İlave Sermaye Katkıları
+    Sermaye Avansı
+    Geri Alınmış Paylar (-)
+    Karşılıklı İştirak Sermaye Düzeltmesi (-)
+    Paylara İlişkin Primler (İskontolar)
+    Ortak Kontrole Tabi Teşebbüs veya İşletmeleri İçeren Birleşmelerin Etkisi
+    Pay Bazlı Ödemeler (-)
+    Kar veya Zararda Yeniden Sınıflandırılmayacak Birikmiş Diğer Kapsamlı Gelirler (Giderler)
+    Kar veya Zararda Yeniden Sınıflandırılacak Birikmiş Diğer Kapsamlı Gelirler (Giderler)
+    Kardan Ayrılan Kısıtlanmış Yedekler
+    Diğer Özkaynak Payları
+    Diğer Yedekler
+    Ödenen Kar Payı Avansları (Net) (-)
+    Geçmiş Yıllar Kar/Zararları
+    Dönem Net Kar/Zararı
+    Azınlık Payları
+    Toplam Özkaynaklar
+    Toplam Kaynaklar
+    Hedge Dahil Net Yabancı Para Pozisyonu

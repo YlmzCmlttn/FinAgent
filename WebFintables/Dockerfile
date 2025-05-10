@@ -1,0 +1,28 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first to leverage Docker cache
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the application code
+COPY . .
+
+# Create necessary directories
+RUN mkdir -p /app/sample_outputs /app/output
+
+# Set environment variables
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+
+# Remove the CMD since we're using entrypoint in docker-compose 
+#CMD ["python", "download_all_company_financials.py"]
+#CMD ["python", "get_excel_files_names.py"]
+CMD ["python", "get_company_names.py"]
