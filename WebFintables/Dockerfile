@@ -25,4 +25,5 @@ ENV PYTHONUNBUFFERED=1
 # Remove the CMD since we're using entrypoint in docker-compose 
 #CMD ["python", "download_all_company_financials.py"]
 #CMD ["python", "get_excel_files_names.py"]
-CMD ["python", "get_company_names.py"]
+#CMD ["python", "get_company_names.py"]
+CMD ["python", "valid_companies.py"]

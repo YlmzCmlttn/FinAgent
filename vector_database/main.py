@@ -9,6 +9,11 @@ from read_and_fill_facts import read_and_fill_facts, insert_total_liabilities
 from create_hierarchy_map import update_parent_accounts
 from agents import Agent, Runner, gen_trace_id, trace, function_tool, ModelSettings
 from data import SAMPLE_ACCOUNTS, SAMPLE_COMPANIES
+
+import os
+import sys
+import io
+
 # Load environment variables
 load_dotenv()
 
@@ -273,6 +278,19 @@ def get_similar_accounts(account_query_prompt: str) -> list[dict]:
     """
     Get similar accounts based on the given account query prompt. 
     It will query the account table with embedding vector search and return the top 5 results.
+
+    Args:
+        account_query_prompt: Account query prompt.
+    Returns:
+        A list of similar accounts with their code, name, and description. If the account is a parent account, it will also return the children accounts.
+    """
+    return search_accounts_with_children(account_query_prompt)
+    return _search_hnsw( table="account", select_cols=["account_id", "code", "name", "description"], query=account_query_prompt,limit=5)
+
+def get_similar_accounts_with_children(account_query_prompt: str) -> list[dict]:
+    """
+    Get similar accounts based on the given account query prompt. 
+    It will query the account table with embedding vector search and return the top 5 results.
     If the account is a parent account, it will also return the children accounts.
 
     Args:
@@ -281,7 +299,6 @@ def get_similar_accounts(account_query_prompt: str) -> list[dict]:
         A list of similar accounts with their code, name, and description. If the account is a parent account, it will also return the children accounts.
     """
     return search_accounts_with_children(account_query_prompt)
-    #return _search_hnsw( table="account", select_cols=["account_id", "code", "name", "description"], query=account_query_prompt,limit=5)
 
 @function_tool
 def query_with_sql(sql_query: str) -> list[dict]:
@@ -301,6 +318,58 @@ def query_with_sql(sql_query: str) -> list[dict]:
     cur.close()
     conn.close()
     return results
+
+@function_tool
+def get_inflation(start_year: int, start_month: int, end_year: int, end_month: int) -> float:
+    """
+    Get the inflation rate between the start and end date.
+    Args:
+        start_year: Start year.
+        start_month: Start month.
+        end_year: End year.
+        end_month: End month.
+    Returns:
+        A float value of the inflation rate between the start and end date.   
+    """
+    return 0.41;
+
+@function_tool
+def execute_python_code(python_code: str) -> str:
+    """
+    Execute the given python code and return everything it prints.
+    Args:
+        python_code: Python code to execute.
+    Returns:
+        The combined stdout and stderr of the code.
+    """
+    # 1) Write the code out to a temp file
+    temp_filename = "temp.py"
+    with open(temp_filename, "w") as f:
+        f.write(python_code)
+
+    # 2) Redirect stdout/stderr into a buffer
+    old_stdout, old_stderr = sys.stdout, sys.stderr
+    buffer = io.StringIO()
+    sys.stdout = buffer
+    sys.stderr = buffer
+
+    try:
+        # 3) Execute in a clean namespace
+        exec(open(temp_filename).read(), {})
+    except Exception as e:
+        # If there's an exception, it'll be printed into our buffer
+        print(f"Error during execution: {e}")
+    finally:
+        # 4) Restore stdout/stderr & remove temp file
+        sys.stdout, sys.stderr = old_stdout, old_stderr
+        try:
+            os.remove(temp_filename)
+        except OSError:
+            pass
+
+    # 5) Return whatever was printed (including errors)
+    return buffer.getvalue()
+
 
 # --- MAIN FLOW ---
 async def main():
@@ -323,16 +392,16 @@ async def main():
     # 3) Create HNSW indexes
     create_hnsw('account')
     create_hnsw('company')
-
-    agent = Agent(
+    financial_statements_agent = Agent(
         name="Financial Statements Agent",
-        instructions="You are a helpful professional financial analyst with expertise in financial statements and sql queries."
+        instructions="You are a sub-agent of orchestrator agent. You are a financial analyst with expertise in financial statements and sql queries."
             "You will use the following tools to answer the user's question:"
             "1. get_similar_companies"
             "2. get_similar_accounts"
-            "3. query_with_sql"
-            "Before you use query_with_sql, If you need to get correct company or acounts table information, you can use get_similar_companies or get_similar_accounts tools."
-            "Account can have children accounts. Parent account is the total of all its children accounts. if you need to get the total of all accounts, you should use the parent account."
+            "3. get_similar_accounts_with_children"
+            "4. query_with_sql"
+            "Before you use query_with_sql, If you need to get correct company or acounts table information, you can use get_similar_companies, get_similar_accounts, get_similar_accounts_with_children tools.\n"
+            "Account can have children accounts. Parent account is the total of all its children accounts. if you need to get the total of all accounts, you should use the parent account.\n"
             "Database Structure:\n"
             "account (account_id SERIAL PRIMARY KEY,code TEXT NOT NULL UNIQUE, parent_account_id  INTEGER NULL REFERENCES account(account_id) ON DELETE CASCADE,name TEXT NOT NULL UNIQUE,description TEXT NOT NULL)\n"
             "company (company_id SERIAL PRIMARY KEY,ticker TEXT NOT NULL UNIQUE,name TEXT NOT NULL UNIQUE,description TEXT NOT NULL)\n"            
@@ -341,20 +410,72 @@ async def main():
             "You you query the dabase if you need to get account and/or company information. You must use get_similar_companies or get_similar_accounts tools to get the correct company or account information.\n"
             "Some of the accounts are subcategories of other accounts. If you need to get the total of all accounts, you should use the parent account. If you need to get the subcategories of an account, you should use the account itself.\n"
             "You don't need to sum up the values of the accounts. You can use the account itself to get the total value. If you need to get the total value of a category, you should use the parent account.\n"
-            "For example TOTAL_LIABILITIES is the sum of TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES. So if you need to get the total liabilities, you should use TOTAL_LIABILITIES not to sum up TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES.\n",
-        model="gpt-4o-mini",
+            "For example TOTAL_LIABILITIES is the sum of TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES. So if you need to get the total liabilities, you should use TOTAL_LIABILITIES not to sum up TOTAL_SHORT_TERM_LIABILITIES and TOTAL_LONG_TERM_LIABILITIES.\n"
+            "Return the result in JSON format. If you can't find the result, return null.",
+        model="gpt-4.1-mini",
         #model_settings=ModelSettings(temperature=0.2),
-        tools=[get_similar_companies, get_similar_accounts, query_with_sql]
+        tools=[get_similar_companies, get_similar_accounts, get_similar_accounts_with_children, query_with_sql]
     )
 
+    inflation_agent = Agent(
+        name="Inflation Agent",
+        instructions="You are a sub-agent of orchestrator agent. You are a financial analyst with expertise in inflation and sql queries."
+            "You will use the following tools to answer the user's question:"
+            "get_inflation tools with given start year and month and end year and month. You will use this tool to get the inflation rate between the start and end date."
+            "Return the result in JSON format. If you can't find the result, return null.",
+        model="gpt-4.1-mini",
+        #model_settings=ModelSettings(temperature=0.2),
+        tools=[get_inflation]
+    )
+
+    python_code_agent = Agent(
+        name="Python Code Agent",
+        instructions="You are a sub-agent of orchestrator agent. You are a python developer with expertise in python code execution. You can use this tool to analyze the data, math operations, etc.\n"
+            "You need to write python code and execute it using execute_python_code. It will return the printout of the code. Make sure to print important informations and results.\n"
+            "You will use the following tools to answer the user's question:\n"
+            "execute_python_code",
+        model="gpt-4.1",                
+        tools=[execute_python_code]
+    )
+
+
+
+    orchestrator_agent = Agent(
+        name="Orchestrator Agent",
+        instructions="You are a helpful professional financial assistant\n"
+        "You can use different agents and tools to answer the user's question.\n"
+        "You are orchestrator agent. You will use the following agents and tools to answer the user's question:\n"
+        "Before you answer the user's question. Start planning to how to get the result with the available agents and tools.\n"
+        "After that start to use the agents and tools to get the result.\n"
+        "Explain the result in detail. Explain what did you do. Explain the steps you took to get the result. Explain the data you used. Explain the assumptions you made. Explain the limitations of the result.",# Explain the sources you used. Explain the confidence level of the result.",
+        model="gpt-4.1",
+        tools=[
+            financial_statements_agent.as_tool(
+                tool_name="financial_statements_agent",
+                tool_description="Sub-agent that use database to retrieve financial statements information."            
+            ),
+            inflation_agent.as_tool(
+                tool_name="inflation_agent",
+                tool_description="Sub-agent that use database to retrieve inflation information."
+            ),
+            python_code_agent.as_tool(
+                tool_name="python_code_agent",
+                tool_description="Sub-agent that use python code to analyze the data, math operations, etc."
+            )
+        ],
+    )
+    
     #result = await Runner.run(agent, input="Koc Holdingin Toplam Kısa Vadeli Yükümlülükleri hangi yıl hangi çeyrekte en azdır.")
     #print(result.final_output)
     test_messages = [
         # 1) En düşük varlıklar        
         #"What is the total value of Koç Holding's Current Assets in the fourth quarter of 2024?",
         #"What are the total items in Koç Holding's Current Assets category in the fourth quarter of 2024? Give me detailed breakdown of the accounts. Give me all the accounts of subcategories of Current Assets. Also give me all subcategories values of Current Assets.",
-
-        "Koç holding 2024 yilinin 4 çeyreğinde bilançosu ile ilgili detaylı finansal rapor verir misin?",
+        #"2074*1235/12 kaçtır?",
+        #"Şuan tarih hangi yıl hangi ay hangi gündür?",
+        "2022 yılının üçüncü çeyreğinde Toplam Kısa Vadeli Yükümlülükleri en yüksek 3 şirket hangileridir? Bu en yüksek3 şirketin 2023 üçüncü çeyreğindeki ve 2021 yıllarının üçüncü çeyreğindeki Toplam Kısa Vadeli Yükümlülüklerini eflasyon oranına gore değerleri güncelle ve karşılaştır. Eflasyon oranlarını çeyreklerin başlangıç tarihlerinden al.",
+        #"Koç holding 2024 yilinin 4 çeyreğinde bilançosu ile ilgili detaylı finansal rapor verir misin?",
+        
         #"2024 yılının dördüncü çeyreğinde Koç Holdingin Dönen Varlıklar kategorisindeki toplam kalemler (account) hangileridir?",
         # #"Dönen Varlıklar kategorisindeki toplam kalemler (account) hangileridir?",        
         # "2024 yılının dördüncü çeyreğinde Koç Holdingin Other Current Assets detayli kalem kalem listele.",
@@ -380,7 +501,9 @@ async def main():
 
     for msg in test_messages:
         print(f"Running: {msg}")
-        result = await Runner.run(starting_agent=agent, input=msg)
+        trace_id = gen_trace_id()
+        with trace("Orchestrator Agent", trace_id):
+            result = await Runner.run(starting_agent=orchestrator_agent, input=msg, max_turns=20)
         print(result.final_output)
 
     # 4) Test searches
